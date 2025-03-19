@@ -21,9 +21,21 @@
 ## Design & Planning:
 
 ### User Stories
-Write your user stories in this section
+
+#### HTML/CSS User Stories
+* As a player, I want a main menu that is has a clear structure so that I will be able to navigate the page with ease.
+* As a player, I would like to have instruction to the game so that I understand how the game works.
+* As a player, I would like to have the game page to be easy to look at so that I won't have trouble playing the game.
+* As a player, I want to have a choice of a number games to play so that I can pick one that's best for me.
+* As a player, I would like to see the end result of the game so that I can see if I've won I can CELEBRATE or if I've lost, I'll drown my sorrows.
+* As a player, I would like a close button on the main menu so that i can choose to close the game quickly and simply.
+
+#### JavaScript User Stories
+
+
 ### Wireframes
-Attach wireframes in this section
+Please follow this link to the Wireframes.
+
 ### Typography
 Explain font you've used for your project
 ### Colour Scheme
