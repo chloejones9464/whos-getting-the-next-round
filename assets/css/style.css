@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+:root {
+    --primary-text-color: #006e5e;
+    --secondary-text-color: #5b883e;
+    --main-bg-color: #1b7d4e;
+    --highlight-color: #f5945c;
+    --secondary-highlight-color: #c4943e;  
+}
+
+html {
+    font-family: "Caveat Brush", "sans-serif";
+}
+
+
+body {    
+    justify-items: center; 
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-blend-mode: soft-light;
+    background-position: center center;
+    background-attachment: fixed;         
+}
+
+.container {       
+    display: flex;    
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#heading, #enterName, #menu {  
+    justify-items: center;
+    text-align: center;       
+    margin: 10px;
+    padding: 10px;    
+}
+
+#heading {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px white;
+}
+
+input {
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+}
+::placeholder {
+    color: var(--highlight-color);
+}
