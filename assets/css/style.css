@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
+/*Global styling*/
 :root {
     --primary-text-color: #006e5e;
     --secondary-text-color: #5b883e;
@@ -8,11 +9,6 @@
     --secondary-highlight-color: #c4943e;  
 }
 
-html {
-    font-family: "Caveat Brush", "sans-serif";
-}
-
-
 body {    
     justify-items: center; 
     background-color: rgba(255, 255, 255, 0.5);
@@ -20,7 +16,8 @@ body {
     background-repeat: no-repeat;    
     background-blend-mode: soft-light;
     background-position: center center;
-    background-attachment: fixed;         
+    background-attachment: fixed;  
+    font-family: "Caveat Brush", "sans-serif";       
 }
 
 .container {       
@@ -29,6 +26,7 @@ body {
     flex-wrap: nowrap;
 }
 
+/*Styling for Main menu page*/
 #heading, #enterName, #menu {  
     justify-items: center;
     text-align: center;       
@@ -50,3 +48,4 @@ input {
 ::placeholder {
     color: var(--highlight-color);
 }
+
