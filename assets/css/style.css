@@ -71,4 +71,22 @@ input {
 } 
 
 
+/*Media queries for the main menu page*/
+@media screen and (min-width: 353px) {
+    #playGame, #numberOfGames, #rules, #closeGame {
+        width: 50%;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {
+    #playGame, #numberOfGames, #rules, #closeGame {
+        width: 30%;
+    }
+    input {
+        padding: 4px 8px;
+    }
+    
+}
 
