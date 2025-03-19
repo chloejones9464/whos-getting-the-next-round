@@ -5,6 +5,7 @@
     --primary-text-color: #006e5e;
     --secondary-text-color: #5b883e;
     --main-bg-color: #1b7d4e;
+    --secondary-bg-color: #8f9135;
     --highlight-color: #f5945c;
     --secondary-highlight-color: #c4943e;  
 }
@@ -37,7 +38,14 @@ body {
 #heading {
     margin-top: 40px;
     margin-bottom: 0px;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 1px white;
+    color: var(--main-bg-color);
+}
+
+#enterName p {
+    color: var(--main-bg-color);
+    text-shadow: 2px 1px white;
+    font-size: medium;
 }
 
 input {
@@ -48,4 +56,17 @@ input {
 ::placeholder {
     color: var(--highlight-color);
 }
+
+/*Styling the buttons on the main menu page*/
+#playGame, #numberOfGames, #rules, #closeGame {
+    background-color: var(--highlight-color);
+    color: var(--main-bg-color);
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--main-bg-color);
+    border-right: 2px solid var(--main-bg-color);
+    
+} 
+
+
 
