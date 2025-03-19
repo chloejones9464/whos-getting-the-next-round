@@ -4,7 +4,7 @@
 :root {
     --primary-text-color: #006e5e;
     --secondary-text-color: #5b883e;
-    --main-bg-color: #1b7d4e;
+    --main-bg-color: #114e31;
     --secondary-bg-color: #8f9135;
     --highlight-color: #f5945c;
     --secondary-highlight-color: #c4943e;  
@@ -53,6 +53,7 @@ input {
     text-align: center;
     border-radius: 5px;
     background-color: var(--main-bg-color);
+    color: var(--highlight-color);
 }
 ::placeholder {
     color: var(--highlight-color);

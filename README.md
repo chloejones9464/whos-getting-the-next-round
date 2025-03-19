@@ -36,10 +36,20 @@
 ### Wireframes
 Please follow this link to the Wireframes.
 
+Click [here](wireframes.md) and it'll take you straight there!
 ### Typography
-Explain font you've used for your project
+I used Google fonts' "Caveat Brush" for the one and only font for this game. It's a playful and fun font that fits well with a game that is casually played where-ever, whenever and in any decision making process!
 ### Colour Scheme
-Screenshoot of the colour scheme for your project
+
+#### ColorSpace and Eye Dropper
+I used the eye dropper on the image in the background of the front screen and passed the color I'd like to create a palette from, through to ColorSpace.
+I then scrolled thorugh to find the best palette for my project. In this case it was "Matching Gradient".
+
+#### Eye dropper tool in Chrome's extension
+![Eye dropper tool, extention in Chrome](assets/documentation/eye-dropper.webp)
+
+#### ColorSpace color palette, I used the "Matching Gradient" palette
+![ColorSpace color palette](assets/documentation/colorspace-pallett-pick.webp)
 
 ## Features:
 Explain your features on the website,(navigation, pages, links, forms.....)
@@ -47,11 +57,12 @@ Explain your features on the website,(navigation, pages, links, forms.....)
 ### Footer
 ### Other features
 ## Technologies Used
-List of technologies used for your project...
-HTML
-CSS
-Bootstrap
-Github
+For my project I used; 
+* HTML and CSS for the structure of the project.
+* Bootstrap helped create a different effect for my buttons. I made sure to put my own spin by changing the color, font and added a border-bottom/right style to create a 3D effect.
+* Github is used to store and build my project, the BEST!
+* I used Google fonts for a more playful font that'll pair well with my concept (laid-back pub vibe).
+* JavaScript
 ## Testing
 Important part of your README!!!
 ### Google's Lighthouse Performance
@@ -70,7 +81,15 @@ paste here you user story | what is visible to the user and what action they sho
 - and attach screenshot
 
 ## Bugs
-List of bugs and how did you fix them
+
+### Getting the background image to fit the whole screen
+I applied the background image to the HTML page as I'm going to change it when the 'Play game' button is clicked. I then tried working out how to position the image center and so there there wasn't any gaps at the bottom of the page. To do this I applied the following code: **background-position: center center** & **background-attachment: fixed**. This helped position the image in the center of the screen and the attachment is set to fix so that the image stays where it is.
+
+### Google Fonts
+After completing my first project and learning about JavaScript, I'd let my knowledge slip a little on how to import the fonts I'd like from Google Fonts and pop them into my project.
+I'd placed the import line of code in the CSS stylesheet as usual but I'd also copied and pasted the link to put into the head of the HTML page. After realizing what I'd done. I deleted the link in the HTML and kept import in the CSS stylesheet. I'd then noticed that the the font-family was placed in the HTML element on the stylesheet. I placed that style in the body element instead. The font worked perfect after that, thank god!
+
+###
 
 ## Deployment
 
@@ -87,6 +106,8 @@ The site was deployed to Github Pages using the following method:
 
 ## Credits
 List of used resources for your website (text, images, snippets of code, projects....)
+I used ChatGPT and Microsoft Copilot to help create unique imaged for my project's background.
+
   - Code & Text Content
   
   - Media
