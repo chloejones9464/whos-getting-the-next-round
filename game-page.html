@@ -12,7 +12,7 @@
     <title>Who's getting the next round?</title>
 </head>
 
-<body background="assets/images/home-page-bg-pub.webp" width="100%">
+<body background="assets/images/pub-bg-image.webp" width="100%">
     <div class="container">
         <div id="firstDiv">
             <div id="scores">
@@ -22,20 +22,24 @@
             </div>
         </div>
         <div id="secondDiv">
-            <div id="enterName">
-                <h3 class="display-5">Who's playing?</h3>
-                <input type="text" id="playerName" placeholder="Enter player name" required>
+            <div id="computerSection">
+                <h3 class="display-4">Your mate's choice</h3>
+                <div id="computerChoice"></div>                
             </div>
         </div>
         <div id="thirdDiv">
-            <div id="menu">
-                <button type="button" class="btn btn-primary btn-lg" id="playGame">Play game</button> <br>
-                <button type="button" class="btn btn-primary btn-lg" id="numberOfGames">Number of games</button><br>
-                <button type="button" class="btn btn-primary btn-lg" id="rules">Rules</button><br>
-                <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>
+            <div id="playerSection">
+                <div id="rock" ><img src="assets/images/rock-hand-2.webp"/></div> 
+                <div id="paper"><img src="assets/images/paper-hand-2.webp"></div>
+                <div id="scissors"><img src="assets/images/scissors-hand-2.webp"></div>
+                
             </div>
         </div>
     </div>
+
+    <footer>
+        
+    </footer>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
