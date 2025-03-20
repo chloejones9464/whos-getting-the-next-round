@@ -60,7 +60,7 @@ input {
 }
 
 /*Styling the buttons on the main menu page*/
-#playGame, #numberOfGames, #rules, #closeGame {
+#playGame, #numberOfGames, #rules, #closeGame{
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 100%;
@@ -69,6 +69,22 @@ input {
     border-right: 2px solid var(--main-bg-color);
     
 } 
+
+/*Styling the modals*/
+
+.modal-content {
+    background-color: var(--main-bg-color);
+    color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
+}
+
+#close, #save {
+    background-color: var(--highlight-color);
+    border-bottom: 2px solid var(--main-bg-color);
+    border-right: 2px solid var(--main-bg-color);
+    color: var(--main-bg-color);
+}
+
 
 /*Styling for the game page*/
 
