@@ -22,7 +22,7 @@ body {
 }
 
 .container {       
-    margin-top: 75px;
+    margin-top: 30px;
     display: flex;    
     flex-direction: column;
     flex-wrap: nowrap;
@@ -94,6 +94,10 @@ input {
     margin-right: 10px;  
 }
 
+#navbar h1 {
+    align-self: flex-start;
+}
+
 #mainMenu {
     margin-right: 10px;
 }
@@ -113,14 +117,14 @@ input {
 
 #scores {
     font-size: 19px;
+    margin-top: 1px;
 }
 
 #computerSection {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    position: absolute;    
+    text-align: center;
+    margin-top: 20px;        
 }
 
 #computerSection h3 {
@@ -128,6 +132,7 @@ input {
     color: var(--main-bg-color);
     font-size: 50px;
     text-shadow: 2px 2px var(--secondary-highlight-color);
+    text-align: center;
 }
 
 #computerChoice {
@@ -143,7 +148,7 @@ input {
     width: 100px;
     height: 100px;
     position: absolute;
-    margin-top: 550px;
+    margin-top: 280px;
 }
 
 #playerSection img {
@@ -158,9 +163,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
-    position: absolute;
-    bottom: 50px;  
+    margin-top: 250px;      
     text-align: center;     
 }
 
@@ -172,6 +175,16 @@ input {
 
 
 /*Media queries for the main menu page*/
+@media screen and (min-width: 348px) {
+    #computerChoice {
+        margin-top: 100px;
+    }
+
+    #resultDisplay {
+        margin-top: 220px;
+    }
+}
+
 @media screen and (min-width: 353px) {
     #playGame, #numberOfGames, #rules, #closeGame {
         width: 50%;
