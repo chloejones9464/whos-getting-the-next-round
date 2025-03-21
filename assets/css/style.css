@@ -88,7 +88,17 @@ input {
 
 /*Styling for the game page*/
 
-#scores {
+#navbar {
+    display: flex;
+    justify-self: end;  
+    margin-right: 10px;  
+}
+
+#mainMenu {
+    margin-right: 10px;
+}
+
+.box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,8 +108,11 @@ input {
     background-color: var(--main-bg-color);
     color: var(--highlight-color);
     border: 2px solid var(--highlight-color);
-    border-radius: 5px;
-    font-size: 30px;
+    border-radius: 5px;    
+}
+
+#scores {
+    font-size: 19px;
 }
 
 #computerSection {
@@ -107,8 +120,7 @@ input {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    position: absolute;
-    left: 325px;
+    position: absolute;    
 }
 
 #computerSection h3 {
@@ -131,11 +143,11 @@ input {
     width: 100px;
     height: 100px;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 550px;
 }
 
 #playerSection img {
-    width: 50%; 
+    width: 80%; 
 }
 
 #scissors {
@@ -148,8 +160,14 @@ input {
     align-items: center;
     margin-top: auto;
     position: absolute;
-    bottom: 0;
-    left: 270px;    
+    bottom: 50px;  
+    text-align: center;     
+}
+
+/*Styling the winner page*/
+#winner {
+    text-align: center;
+    justify-content: center;
 }
 
 
