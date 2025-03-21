@@ -89,6 +89,43 @@ I applied the background image to the HTML page as I'm going to change it when t
 After completing my first project and learning about JavaScript, I'd let my knowledge slip a little on how to import the fonts I'd like from Google Fonts and pop them into my project.
 I'd placed the import line of code in the CSS stylesheet as usual but I'd also copied and pasted the link to put into the head of the HTML page. After realizing what I'd done. I deleted the link in the HTML and kept import in the CSS stylesheet. I'd then noticed that the the font-family was placed in the HTML element on the stylesheet. I placed that style in the body element instead. The font worked perfect after that, thank god!
 
+### Git conflict
+I received an error displaying;
+To https://github.com/chloejones9464/whos-getting-the-next-round.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/chloejones9464/whos-getting-the-next-round.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+I copied this error into Google and GitHub Docs came to my rescue.
+I had to pull my repo using this code; *git pull origin YOUR_BRANCH_NAME*, which pulled up another error.
+
+Second error showing this;
+$ : The term '$' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that    
+the path is correct and try again.
+At line:1 char:1
++ $ git pull origin main
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], CommandNotFoundException       
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+Silly me for leaving the $ symbol in the code!
+Removed the code and then, lo and behold, another error!!
+
+Third error showed; 
+From https://github.com/chloejones9464/whos-getting-the-next-round
+ * branch            main       -> FETCH_HEAD
+Auto-merging winner.html
+CONFLICT (content): Merge conflict in winner.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+I then fixed the conflict in the winner page and successfully manages to push my updates.
+That was stressful...
+
+
 ###
 
 ## Deployment
