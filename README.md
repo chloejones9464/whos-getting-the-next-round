@@ -144,6 +144,16 @@ The site was deployed to Github Pages using the following method:
 ## Credits
 List of used resources for your website (text, images, snippets of code, projects....)
 I used ChatGPT and Microsoft Copilot to help create unique imaged for my project's background.
+GitHub Docs
+W3Schools
+Bootstrap
+Google
+Flaticon - Rock, Paper, Scissor hands
+ColorSpace
+Pixelied - PNG - WEBP
+Google Fonts
+Favicon
+
 
   - Code & Text Content
   
