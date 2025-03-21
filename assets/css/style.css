@@ -94,8 +94,8 @@ input {
     margin-right: 10px;  
 }
 
-#navbar h1 {
-    align-self: flex-start;
+#gamePageHeading h3 {
+    text-align: center;
 }
 
 #mainMenu {
