@@ -176,7 +176,7 @@ input {
 #playAgain, #mainMenu, #closeGame {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
-    width:70%;
+    width: 40%;
     margin-bottom: 10px;
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
@@ -197,9 +197,8 @@ input {
 @media screen and (min-width: 353px) {
     #playGame, #numberOfGames, #rules, #closeGame {
         width: 50%;
-    }
-
-    
+    }  
+   
 }
 
 @media screen and (min-width: 992px) {
@@ -208,7 +207,7 @@ input {
     }
     input {
         padding: 4px 8px;
-    }
+    }   
     
 }
 
