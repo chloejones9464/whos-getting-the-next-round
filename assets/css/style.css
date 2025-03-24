@@ -173,6 +173,15 @@ input {
     justify-content: center;
 }
 
+#playAgain, #mainMenu, #closeGame {
+    background-color: var(--highlight-color);
+    color: var(--main-bg-color);
+    width:70%;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--main-bg-color);
+    border-right: 2px solid var(--main-bg-color);
+}
+
 
 /*Media queries for the main menu page*/
 @media screen and (min-width: 348px) {
