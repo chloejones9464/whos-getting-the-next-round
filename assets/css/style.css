@@ -173,7 +173,7 @@ input {
     justify-content: center;
 }
 
-#playAgain, #mainMenu, #closeGame {
+#playAgain, .mainMenu, #closeGame {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 40%;
