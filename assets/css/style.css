@@ -30,7 +30,7 @@ body {
 
 /*Styling for Main menu page*/
 #mainMenu {
-    background-image: url("../images/home-page-bg-pub.webp");    
+    background-image: url("../images/pub-bg-image.webp");    
 }
 
 #heading, #enterName, #menu {  
