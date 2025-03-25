@@ -29,6 +29,10 @@ body {
 }
 
 /*Styling for Main menu page*/
+#mainMenu {
+    background-image: url("../images/home-page-bg-pub.webp");    
+}
+
 #heading, #enterName, #menu {  
     justify-items: center;
     text-align: center;       
@@ -78,7 +82,7 @@ input {
     border: 2px solid var(--highlight-color);
 }
 
-#close, #save {
+.close, #save {
     background-color: var(--highlight-color);
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
@@ -87,6 +91,10 @@ input {
 
 
 /*Styling for the game page*/
+
+#gamePage, #winner, #loser {
+    background-image: url("../images/pub-bg-image.webp");    
+}
 
 #navbar {
     display: flex;
@@ -168,7 +176,7 @@ input {
 }
 
 /*Styling the winner page*/
-#winner {
+#winner, #loser {
     text-align: center;
     justify-content: center;
 }
