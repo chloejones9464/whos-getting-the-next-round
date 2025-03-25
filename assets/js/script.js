@@ -58,6 +58,35 @@ function game() {
         const computerScore = document.getElementById("computerScore");
         const drawScore = document.getElementById("drawScore");
 
+        //player choice
+        playerOptions.forEach((option) => {
+            option.addEventListener("click", function () {
+                //random computer choice
+                const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
+                const playerChoice = option.id;
+                const result = document.getElementById("resultDisplay");
+                const computerChoiceDisplay = document.getElementById("computerChoice");
+
+                computerChoiceDisplay.innerHTML = `<img src="assets/images/${computerChoice}-hand-2.webp">`;
+
+                if (playerChoice === computerChoice) {
+                    result.innerHTML = "It's a draw!";
+                    drawScore.textContent = parseInt(drawScore.textContent) + 1;
+                } else if (playerChoice === "rock" && computerChoice === "scissors") {
+                    result.innerHTML = "You win!";
+                    playerScore.textContent = parseInt(playerScore.textContent) + 1;
+                } else if (playerChoice === "paper" && computerChoice === "rock") {
+                    result.innerHTML = "You win!";
+                    playerScore.textContent = parseInt(playerScore.textContent) + 1;
+                } else if (playerChoice === "scissors" && computerChoice === "paper") {
+                    result.innerHTML = "You win!";
+                    playerScore.textContent = parseInt(playerScore.textContent) + 1;
+                } else {
+                    result.innerHTML = "You lose!";
+                    computerScore.textContent = parseInt(computerScore.textContent) + 1;
+                }                
+            });
+        });
+
     }
 }
-            
