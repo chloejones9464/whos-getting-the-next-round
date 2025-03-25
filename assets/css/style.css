@@ -106,10 +106,6 @@ input {
     text-align: center;
 }
 
-#mainMenu {
-    margin-right: 10px;
-}
-
 .box {
     display: flex;
     justify-content: space-between;
