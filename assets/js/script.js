@@ -1,8 +1,7 @@
 window.addEventListener('DOMContentLoaded', setup);
 
 function setup() {
-    document.getElementById("playGame").addEventListener("click", playGame);
-    // document.getElementById("numberOfGames").removeEventListener("change", updateNumberOfGames);
+    document.getElementById("playGame").addEventListener("click", playGame);    
 }
 
 // Changes divs to display the game content
@@ -16,8 +15,7 @@ function playGame() {
         <span data-bs-toggle="modal" data-bs-target="#rulesModal" class="rules"><button
         class="box">Rules</button></span>
     </div>
-    <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>
-            <div class="box"><span>Number of Games: <span id="numOfGames">0</span></span> <br>
+    <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>            
                 <span>Your Wins: <span id="playerScore">0</span></span> <br>
                 <span>Your mate's wins: <span id="computerScore">0</span></span> <br>
                 <span>Draws: <span id="drawScore">0</span></span>
@@ -40,7 +38,7 @@ function playGame() {
 
 
 function computerChoice() {
-    const options = ["rock", "paper", "scissors"];   
+    const options = ["Rock", "Paper", "Scissors"];   
     const randomChoice = Math.floor(Math.random() *options.length);
     return options[randomChoice];
 }
@@ -60,15 +58,25 @@ function didPlayerWin(player, computer) {
 }
 
 function roundResults(playerChoice) {
-    const computerResult = getRandomComputerResult();
-  if (hasPlayerWonTheRound === true){
+  if (didPlayerWin === true){
     playerScore++
     return "You win!";
-  } else if (hasPlayerWonTheRound === false) {
+  } else if (didPlayerWin === false) {
     computerScore++
     return "Your mate wins!";
   } else {
     drawScore++
     return "DRAW! You both chose " + playerChoice;
   }
+}
+
+function displayResults(playerChoice) {
+    const playerScoreDisplay = document.getElementById("playerScore");
+    const computerScoreDisplay = document.getElementById("computerScore");
+    const drawScoreDisplay = document.getElementById("drawScore");
+
+    roundResults(playerChoice)
+    playerScoreDisplay.innerText = playerScore;
+    computerScoreDisplay.innerText = computerScore;
+    drawScoreDisplay.innerText = drawScore;
 }

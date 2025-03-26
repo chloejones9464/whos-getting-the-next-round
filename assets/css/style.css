@@ -64,7 +64,7 @@ input {
 }
 
 /*Styling the buttons on the main menu page*/
-#playGame, #numberOfGames, #rules, #closeGame{
+#playGame, #rules, #closeGame{
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 100%;
@@ -199,14 +199,14 @@ input {
 }
 
 @media screen and (min-width: 353px) {
-    #playGame, #numberOfGames, #rules, #closeGame {
+    #playGame, #rules, #closeGame {
         width: 50%;
     }  
    
 }
 
 @media screen and (min-width: 992px) {
-    #playGame, #numberOfGames, #rules, #closeGame {
+    #playGame, #rules, #closeGame {
         width: 30%;
     }
     input {
