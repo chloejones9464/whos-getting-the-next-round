@@ -7,19 +7,20 @@ function setup() {
 // Changes divs to display the game content
 function playGame() {
     document.getElementById("playGame").removeEventListener("click", playGame);
-    document.getElementById("closeGame").removeEventListener("click", closeGame);
+    // document.getElementById("closeGame").removeEventListener("click", closeGame);
 
     document.getElementById("firstDiv").innerHTML = /*html*/ `
     <div id="navbar">        
         <span><button class="box">Main menu</button></span> <br>
         <span data-bs-toggle="modal" data-bs-target="#rulesModal" class="rules"><button
         class="box">Rules</button></span>
-    </div>
-    <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>            
-                <span>Your Wins: <span id="playerScore">0</span></span> <br>
-                <span>Your mate's wins: <span id="computerScore">0</span></span> <br>
-                <span>Draws: <span id="drawScore">0</span></span>
-            </div>`;
+    </div>    
+    <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>
+    <div class="box">
+        <span>Your Wins: <span id="playerScore">0</span></span> <br>
+        <span>Your mate's wins: <span id="computerScore">0</span></span> <br>
+        <span>Draws: <span id="drawScore">0</span></span>
+    </div>`;
 
     document.getElementById("secondDiv").innerHTML = /*html*/ `
     <div id="computerSection">
@@ -34,49 +35,13 @@ function playGame() {
         <div id="paper"><img src="assets/images/paper-hand-2.webp"></div>
         <div id="scissors"><img src="assets/images/scissors-hand-2.webp"></div>
     </div>`;
+    addEventListenersToGamePage();
 };
 
-
-function computerChoice() {
-    const options = ["Rock", "Paper", "Scissors"];   
-    const randomChoice = Math.floor(Math.random() *options.length);
-    return options[randomChoice];
+// Event listeners for player's choice
+function addEventListenersToGamePage() {
+    document.getElementById("rock").addEventListener("click", () => playerHasChosen("Rock"));
+    document.getElementById("paper").addEventListener("click", () => playerHasChosen("Paper"));
+    document.getElementById("scissors").addEventListener("click", () => playerHasChosen("Scissors"));
 }
 
-function didPlayerWin(player, computer) {
-    if (player === "Rock" && computer === "Scissors") {
-        return true;
-      }else if (player === "Scissors" && computer === "Paper") {
-        return true;
-      }  else if (player === "Paper" && computer === "Rock") {
-        return true;
-      }else if (player === computer){
-        return false;
-      } else {
-        return false;
-      }
-}
-
-function roundResults(playerChoice) {
-  if (didPlayerWin === true){
-    playerScore++
-    return "You win!";
-  } else if (didPlayerWin === false) {
-    computerScore++
-    return "Your mate wins!";
-  } else {
-    drawScore++
-    return "DRAW! You both chose " + playerChoice;
-  }
-}
-
-function displayResults(playerChoice) {
-    const playerScoreDisplay = document.getElementById("playerScore");
-    const computerScoreDisplay = document.getElementById("computerScore");
-    const drawScoreDisplay = document.getElementById("drawScore");
-
-    roundResults(playerChoice)
-    playerScoreDisplay.innerText = playerScore;
-    computerScoreDisplay.innerText = computerScore;
-    drawScoreDisplay.innerText = drawScore;
-}
