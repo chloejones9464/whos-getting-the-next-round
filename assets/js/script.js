@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', setup);
 
 function setup() {
     document.getElementById("playGame").addEventListener("click", playGame);
-    document.getElementById("numberOfGames").removeEventListener("change", updateNumberOfGames);
+    // document.getElementById("numberOfGames").removeEventListener("change", updateNumberOfGames);
 }
 
 // Changes divs to display the game content
@@ -38,55 +38,37 @@ function playGame() {
     </div>`;
 };
 
-//Game logic
-function game() {
-    let playerScore = 0;
-    let computerScore = 0;
-    let drawScore = 0;
-    let moves = 0;
 
+function computerChoice() {
+    const options = ["rock", "paper", "scissors"];   
+    const randomChoice = Math.floor(Math.random() *options.length);
+    return options[randomChoice];
+}
 
-    //game function
-    function gamePlay() {
-        //grabbing the elements
-        const rock = document.getElementById("rock");
-        const paper = document.getElementById("paper");
-        const scissors = document.getElementById("scissors");
-        const playerOptions = [rock, paper, scissors];
-        const computerOptions = ["rock", "paper", "scissors"];
-        const playerScore = document.getElementById("playerScore");
-        const computerScore = document.getElementById("computerScore");
-        const drawScore = document.getElementById("drawScore");
+function didPlayerWin(player, computer) {
+    if (player === "Rock" && computer === "Scissors") {
+        return true;
+      }else if (player === "Scissors" && computer === "Paper") {
+        return true;
+      }  else if (player === "Paper" && computer === "Rock") {
+        return true;
+      }else if (player === computer){
+        return false;
+      } else {
+        return false;
+      }
+}
 
-        //player choice
-        playerOptions.forEach((option) => {
-            option.addEventListener("click", function () {
-                //random computer choice
-                const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
-                const playerChoice = option.id;
-                const result = document.getElementById("resultDisplay");
-                const computerChoiceDisplay = document.getElementById("computerChoice");
-
-                computerChoiceDisplay.innerHTML = `<img src="assets/images/${computerChoice}-hand-2.webp">`;
-
-                if (playerChoice === computerChoice) {
-                    result.innerHTML = "It's a draw!";
-                    drawScore.textContent = parseInt(drawScore.textContent) + 1;
-                } else if (playerChoice === "rock" && computerChoice === "scissors") {
-                    result.innerHTML = "You win!";
-                    playerScore.textContent = parseInt(playerScore.textContent) + 1;
-                } else if (playerChoice === "paper" && computerChoice === "rock") {
-                    result.innerHTML = "You win!";
-                    playerScore.textContent = parseInt(playerScore.textContent) + 1;
-                } else if (playerChoice === "scissors" && computerChoice === "paper") {
-                    result.innerHTML = "You win!";
-                    playerScore.textContent = parseInt(playerScore.textContent) + 1;
-                } else {
-                    result.innerHTML = "You lose!";
-                    computerScore.textContent = parseInt(computerScore.textContent) + 1;
-                }                
-            });
-        });
-
-    }
+function roundResults(playerChoice) {
+    const computerResult = getRandomComputerResult();
+  if (hasPlayerWonTheRound === true){
+    playerScore++
+    return "You win!";
+  } else if (hasPlayerWonTheRound === false) {
+    computerScore++
+    return "Your mate wins!";
+  } else {
+    drawScore++
+    return "DRAW! You both chose " + playerChoice;
+  }
 }
