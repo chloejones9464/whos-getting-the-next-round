@@ -45,3 +45,9 @@ function addEventListenersToGamePage() {
     document.getElementById("scissors").addEventListener("click", () => playerHasChosen("Scissors"));
 }
 
+//create a function for computer choice
+function computerChoice() {
+    const options = ["Rock", "Paper", "Scissors"];   
+    const randomChoice = Math.floor(Math.random() * options.length);
+    return options[randomChoice];
+}
