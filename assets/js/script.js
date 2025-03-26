@@ -51,3 +51,17 @@ function computerChoice() {
     const randomChoice = Math.floor(Math.random() * options.length);
     return options[randomChoice];
 }
+
+
+//checking the results of the game
+function didPlayerWin(playerChoice, computerChoice) {    
+    if (playerChoice === "Rock" && computerChoice === "Scissors") {
+        return true;
+      }else if (playerChoice === "Scissors" && computerChoice === "Paper") {
+        return true;
+      }  else if (playerChoice === "Paper" && computerChoice === "Rock") {
+        return true;
+      } else {
+        return false;
+      }
+}
