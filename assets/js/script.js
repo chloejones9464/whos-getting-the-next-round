@@ -65,3 +65,52 @@ function didPlayerWin(playerChoice, computerChoice) {
         return false;
       }
 }
+
+
+
+
+//displaying the results of the game
+function playerHasChosen(playerChoice) {
+    const computer = computerChoice();   
+    const resultDisplay = document.getElementById("resultDisplay");
+    const computerChoiceDisplay = document.getElementById("computerChoice");    
+
+    computerChoiceDisplay.innerHTML = `<img src="assets/images/${computer.toLowerCase()}-hand-2.webp" />`;    
+    if (didPlayerWin(playerChoice, computer) === true) {
+        resultDisplay.innerText = "You win!"; 
+        displayResults("player");  
+    } else {
+        if (playerChoice === computer) {
+            resultDisplay.innerText = "DRAW! You both chose " + playerChoice;
+            displayResults("draw");
+        } else {
+            resultDisplay.innerText = "Your mate wins!";
+            displayResults("computer");
+        }        
+    }    
+}
+
+let playerScore = 0;
+let computerScore = 0;
+let drawScore = 0;
+
+function displayResults(result) {
+    const playerScoreDisplay = document.getElementById("playerScore");
+    const computerScoreDisplay = document.getElementById("computerScore");
+    const drawScoreDisplay = document.getElementById("drawScore");
+
+    roundResults(result)
+    playerScoreDisplay.innerText = playerScore;
+    computerScoreDisplay.innerText = computerScore;
+    drawScoreDisplay.innerText = drawScore;
+}
+
+function roundResults(result) {
+  if (result === "player"){
+    playerScore++;    
+  } else if (result === "computer") {
+    computerScore++;
+  } else {
+    drawScore++;
+  }
+}
