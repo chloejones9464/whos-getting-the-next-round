@@ -63,6 +63,10 @@ input {
     color: var(--highlight-color);
 }
 
+footer {    
+    margin-top: 20px;    
+}
+
 /*Styling the buttons on the main menu page*/
 #playGame, #rules, #closeGame{
     background-color: var(--highlight-color);
@@ -119,7 +123,7 @@ input {
     border-radius: 5px;    
 }
 
-#scores {
+.scores {
     font-size: 19px;
     margin-top: 1px;
 }
@@ -147,20 +151,22 @@ input {
     margin-top: 160px;
 }
 
+#computerChoice img {
+    width: 83px;
+    margin-top: 15px; 
+}
+
 #resultDisplay {
     background-color: #006e5e;
-    width: 100px;
+    width: 200px;
     height: 100px;
     position: absolute;
     margin-top: 280px;
 }
 
 #playerSection img {
+    margin-top: 20px;
     width: 80%; 
-}
-
-#scissors {
-    margin-bottom: 30px;
 }
 
 #playerSection {
@@ -189,12 +195,21 @@ input {
 
 /*Media queries for the main menu page*/
 @media screen and (min-width: 348px) {
+
+    /*Game Page mediw queries*/
     #computerChoice {
         margin-top: 100px;
+        width: 200px;
+        height: 144px;
+    }
+
+    #computerChoice img {
+        width: 76px; 
     }
 
     #resultDisplay {
-        margin-top: 220px;
+        margin-top: 255px;
+        width: 321px;
     }
 }
 

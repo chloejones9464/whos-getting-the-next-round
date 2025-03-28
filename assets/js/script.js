@@ -87,7 +87,7 @@ function playerHasChosen(playerChoice) {
             resultDisplay.innerText = "Your mate wins!";
             displayResults("computer");
         }        
-    }    
+    } 
 }
 
 let playerScore = 0;
