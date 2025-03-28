@@ -11,7 +11,7 @@ function playGame() {
 
     document.getElementById("firstDiv").innerHTML = /*html*/ `
     <div id="navbar">        
-        <span><button class="box">Main menu</button></span> <br>
+        <span><button id="mainMenuBtn" class="box">Main menu</button></span> <br>
         <span data-bs-toggle="modal" data-bs-target="#rulesModal" class="rules"><button
         class="box">Rules</button></span>
     </div>    
@@ -43,6 +43,7 @@ function addEventListenersToGamePage() {
     document.getElementById("rock").addEventListener("click", () => playerHasChosen("Rock"));
     document.getElementById("paper").addEventListener("click", () => playerHasChosen("Paper"));
     document.getElementById("scissors").addEventListener("click", () => playerHasChosen("Scissors"));
+    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 }
 
 //create a function for computer choice
@@ -77,14 +78,14 @@ function playerHasChosen(playerChoice) {
 
     computerChoiceDisplay.innerHTML = `<img src="assets/images/${computer.toLowerCase()}-hand-2.webp" />`;    
     if (didPlayerWin(playerChoice, computer) === true) {
-        resultDisplay.innerText = "You win!"; 
+        resultDisplay.innerHTML = "You win!"; 
         displayResults("player");  
     } else {
         if (playerChoice === computer) {
-            resultDisplay.innerText = "DRAW! You both chose " + playerChoice;
+            resultDisplay.innerHTML = "DRAW! You both chose " + playerChoice;
             displayResults("draw");
         } else {
-            resultDisplay.innerText = "Your mate wins!";
+            resultDisplay.innerHTML = "Your mate wins!";
             displayResults("computer");
         }        
     } 
@@ -113,4 +114,27 @@ function roundResults(result) {
   } else {
     drawScore++;
   }
+}
+
+// Main menu button
+
+function mainMenu() {
+    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    <div id="heading" class="heading">
+        <h1 class="display-1">Who's getting the next round?</h1>
+        <h2 class="display-4">Rock, Paper, Scissors game</h2>
+    </div>`;
+    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    <div id="enterName">
+        <h3 class="display-5">Who's playing?</h3>
+        <input type="text" id="playerName" placeholder="Enter player name" required>
+    </div>`;
+    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    <div id="menu">
+        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play
+            game</button> <br>                
+        <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal"
+        data-bs-target="#rulesModal">Rules</button><br>
+        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>
+    </div>`;
 }

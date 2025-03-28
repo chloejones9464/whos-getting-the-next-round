@@ -162,11 +162,20 @@ footer {
     height: 100px;
     position: absolute;
     margin-top: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
 }
 
 #playerSection img {
     margin-top: 20px;
     width: 80%; 
+}
+
+#rock img{
+    margin-top: 41px;
 }
 
 #playerSection {
