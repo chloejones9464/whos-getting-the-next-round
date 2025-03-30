@@ -36,6 +36,9 @@ function playGame() {
         <div id="scissors"><img src="assets/images/scissors-hand-2.webp"></div>
     </div>`;
     addEventListenersToGamePage();
+
+    // Getting main menu button
+    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 };
 
 // Event listeners for player's choice
@@ -43,7 +46,7 @@ function addEventListenersToGamePage() {
     document.getElementById("rock").addEventListener("click", () => playerHasChosen("Rock"));
     document.getElementById("paper").addEventListener("click", () => playerHasChosen("Paper"));
     document.getElementById("scissors").addEventListener("click", () => playerHasChosen("Scissors"));
-    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
+    
 }
 
 //create a function for computer choice
@@ -116,7 +119,19 @@ function roundResults(result) {
   }
 }
 
-// Main menu button
+//Player wins page
+
+function playerWins() {
+    if (playerScore === 3) {
+        document.getElementById("firstDiv").innerHTML = /*html*/ `
+        `;
+        document.getElementById("secondDiv").innerHTML = /*html*/ `
+        `;
+        document.getElementById("thirdDiv").innerHTML = /*html*/ `
+        >`;
+    }
+
+//Main menu function
 
 function mainMenu() {
     document.getElementById("firstDiv").innerHTML = /*html*/ `
@@ -131,10 +146,10 @@ function mainMenu() {
     </div>`;
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">
-        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play
-            game</button> <br>                
-        <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal"
-        data-bs-target="#rulesModal">Rules</button><br>
+        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play game</button> <br>                
+        <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal" data-bs-target="#rulesModal">Rules</button><br>
         <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>
     </div>`;
+    document.getElementById("playGame").addEventListener("click", playGame);
 }
+
