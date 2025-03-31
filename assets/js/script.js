@@ -4,6 +4,9 @@ function setup() {
     document.getElementById("playGame").addEventListener("click", playGame);    
 }
 
+//Number of games slider 
+
+
 // Changes divs to display the game content
 function playGame() {
     document.getElementById("playGame").removeEventListener("click", playGame);
@@ -164,9 +167,7 @@ function playerWinPage() {
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
-        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
-        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
-
+        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
     </div>`
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
@@ -193,9 +194,7 @@ function computerWinPage() {
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
-        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
-        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
-
+        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>       
     </div>`
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
@@ -218,9 +217,7 @@ function drawPage() {
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
-        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
-        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
-
+        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
     </div>`
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
@@ -257,8 +254,7 @@ function mainMenu() {
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">
         <button type="button" class="btn btn-primary btn-lg" id="playGame">Play game</button> <br>                
-        <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal" data-bs-target="#rulesModal">Rules</button><br>
-        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>
+        <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal" data-bs-target="#rulesModal">Rules</button><br>        
     </div>`;
     document.getElementById("playGame").addEventListener("click", playGame);
 }

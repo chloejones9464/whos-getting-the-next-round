@@ -68,7 +68,7 @@ footer {
 }
 
 /*Styling the buttons on the main menu page*/
-#playGame, #rules, #closeGame{
+#playGame, #rules, #numberOfGames {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 100%;
@@ -92,7 +92,6 @@ footer {
     border-right: 2px solid var(--main-bg-color);
     color: var(--main-bg-color);
 }
-
 
 /*Styling for the game page*/
 
@@ -201,7 +200,7 @@ footer {
     font-size: 1.5rem;
 }
 
-#playAgain, .mainMenu, #closeGame {
+#playAgain, .mainMenu {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 40%;
@@ -236,14 +235,17 @@ footer {
 }
 
 @media screen and (min-width: 353px) {
-    #playGame, #rules, #closeGame {
+    #playGame, #rules {
         width: 50%;
     }  
    
+    #numberOfGames {
+        width: 50%
+    }
 }
 
 @media screen and (min-width: 992px) {
-    #playGame, #rules, #closeGame {
+    #playGame, #rules, #numberOfGames {
         width: 30%;
     }
     input {
