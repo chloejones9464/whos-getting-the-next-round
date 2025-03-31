@@ -36,7 +36,7 @@ function playGame() {
         <div id="scissors"><img src="assets/images/scissors-hand-2.webp"></div>
     </div>`;
     addEventListenersToGamePage();
-
+    
     // Getting main menu button
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 };
@@ -97,6 +97,7 @@ function playerHasChosen(playerChoice) {
 let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
+const winningScore = 3;
 
 function displayResults(result) {
     const playerScoreDisplay = document.getElementById("playerScore");
@@ -111,25 +112,65 @@ function displayResults(result) {
 
 function roundResults(result) {
   if (result === "player"){
-    playerScore++;    
+    playerScore++;
   } else if (result === "computer") {
     computerScore++;
   } else {
-    drawScore++;
-  }
+    drawScore++;    
+  }  
+  playerWins();
+  computerWins();
+  draw();
 }
 
 //Player wins page
 
 function playerWins() {
-    if (playerScore === 3) {
-        document.getElementById("firstDiv").innerHTML = /*html*/ `
-        `;
-        document.getElementById("secondDiv").innerHTML = /*html*/ `
-        `;
-        document.getElementById("thirdDiv").innerHTML = /*html*/ `
-        >`;
+    if (playerScore === winningScore) {
+        playerWinPage();
     }
+}
+
+function computerWins() {
+    if (computerScore === winningScore) {
+        console.log("computer wins");
+    }
+}
+
+function draw() {
+    if (drawScore === winningScore) {
+        console.log("DRAW!");
+    }
+}
+
+function playerWinPage() {
+    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    <div id="scores">
+        <div class="box">
+            <h1>TELL YOUR MATE WHAT
+            <br> YOU WANT FROM THE BAR!</h1>
+        </div>
+    </div>`
+    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    <div class="box" id="winnerPara">
+                <p>Ladies and gentlemen, we have a champion! Against all odds, defying the laws of probability (and
+                    sobriety), YOU have emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
+                    the cunning of a fox, the reflexes of a caffeinated squirrel, and the sheer luck of someone who
+                    always finds money in old jeans, you have crushed your opponent’s spirits like a well-placed rock
+                    smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
+                    bragging rights and a free round of drinks.🍻👏</p>
+            </div>`
+    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    <div id="menu">                
+        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
+        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
+        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
+
+    </div>`
+    document.getElementById("playGame").addEventListener("click", playGame);
+    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
+
+}
 
 //Main menu function
 
