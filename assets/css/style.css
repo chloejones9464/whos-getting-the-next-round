@@ -39,7 +39,6 @@ body {
     margin: 10px;
     padding: 10px;    
 }
-
 #heading {
     margin-top: 40px;
     margin-bottom: 0px;
@@ -58,6 +57,7 @@ input {
     border-radius: 5px;
     background-color: var(--main-bg-color);
     color: var(--highlight-color);
+    font-size: 1.2rem;
 }
 ::placeholder {
     color: var(--highlight-color);
@@ -75,7 +75,7 @@ footer {
     margin-bottom: 10px;
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
-    
+    font-size: 1.5rem;    
 } 
 
 /*Styling the modals*/
@@ -208,6 +208,10 @@ footer {
     margin-bottom: 10px;
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
+}
+
+#mainMenuBtn {
+    font-size: 1.6rem;
 }
 
 
