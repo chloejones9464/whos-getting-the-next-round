@@ -134,13 +134,13 @@ function playerWins() {
 
 function computerWins() {
     if (computerScore === winningScore) {
-        console.log("computer wins");
+        computerWinPage();
     }
 }
 
 function draw() {
     if (drawScore === winningScore) {
-        console.log("DRAW!");
+        drawPage();
     }
 }
 
@@ -160,6 +160,60 @@ function playerWinPage() {
                     always finds money in old jeans, you have crushed your opponent’s spirits like a well-placed rock
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
                     bragging rights and a free round of drinks.🍻👏</p>
+            </div>`
+    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    <div id="menu">                
+        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
+        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
+        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
+
+    </div>`
+    document.getElementById("playGame").addEventListener("click", playGame);
+    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
+
+}
+
+function computerWinPage() {
+    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    <div id="scores">
+                <div class="box">
+                    <h1>DIG DEEP AND
+                        <br> GET TO THE BAR</h1>
+                </div>
+            </div>
+    </div>`
+    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    <div class="box" id="winnerPara">
+                <p>Oh no, my dear defeated warrior—your rock was rolled, your paper was shredded, and your scissors got
+                    safety-proofed. You came, you threw, you… well, you tried. But fate (and probably your opponent’s
+                    shady mind games) had other plans. Don’t worry, though—losing at Pub Rock, Paper, Scissors just
+                    means you get the honor of buying the next round! So hold your head high, march to the bar with
+                    dignity, and pretend this was all part of your master plan. 🍻😂</p>
+            </div>`
+    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    <div id="menu">                
+        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
+        <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
+        <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
+
+    </div>`
+    document.getElementById("playGame").addEventListener("click", playGame);
+    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
+
+}
+
+function drawPage() {
+    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    <div id="scores">
+                <div class="box">
+                    <h1>IT'S A
+                        <br> DRAW!</h1>
+                </div>
+            </div>
+    </div>`
+    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    <div class="box" id="winnerPara">
+                <p>You can chose to buy your own pints or give you luck another chance!!</p>
             </div>`
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">                
