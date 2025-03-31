@@ -186,10 +186,19 @@ footer {
     text-align: center;     
 }
 
-/*Styling the winner page*/
+/*Styling the winner/loser/draw page*/
 #winner, #loser {
     text-align: center;
     justify-content: center;
+}
+
+.resultPageHeading, #winnerPara {
+    text-align: center;
+    justify-content: center;
+}
+
+#winnerPara, #scoreBoard, #navbar {
+    font-size: 1.5rem;
 }
 
 #playAgain, .mainMenu, #closeGame {
@@ -205,7 +214,7 @@ footer {
 /*Media queries for the main menu page*/
 @media screen and (min-width: 348px) {
 
-    /*Game Page mediw queries*/
+    /*Game Page media queries*/
     #computerChoice {
         margin-top: 100px;
         width: 200px;

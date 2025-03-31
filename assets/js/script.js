@@ -16,7 +16,7 @@ function playGame() {
         class="box">Rules</button></span>
     </div>    
     <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>
-    <div class="box">
+    <div id="scoreBoard" class="box">
         <span>Your Wins: <span id="playerScore">0</span></span> <br>
         <span>Your mate's wins: <span id="computerScore">0</span></span> <br>
         <span>Draws: <span id="drawScore">0</span></span>
@@ -146,8 +146,8 @@ function draw() {
 
 function playerWinPage() {
     document.getElementById("firstDiv").innerHTML = /*html*/ `
-    <div id="scores">
-        <div class="box">
+    <div>
+        <div class="box resultPageHeading">
             <h1>TELL YOUR MATE WHAT
             <br> YOU WANT FROM THE BAR!</h1>
         </div>
@@ -175,8 +175,8 @@ function playerWinPage() {
 
 function computerWinPage() {
     document.getElementById("firstDiv").innerHTML = /*html*/ `
-    <div id="scores">
-                <div class="box">
+    <div>
+                <div class="box resultPageHeading">
                     <h1>DIG DEEP AND
                         <br> GET TO THE BAR</h1>
                 </div>
@@ -204,8 +204,8 @@ function computerWinPage() {
 
 function drawPage() {
     document.getElementById("firstDiv").innerHTML = /*html*/ `
-    <div id="scores">
-                <div class="box">
+    <div>
+                <div class="box resultPageHeading">
                     <h1>IT'S A
                         <br> DRAW!</h1>
                 </div>
