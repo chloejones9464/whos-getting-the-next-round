@@ -8,7 +8,7 @@ function setup() {
 function playGame() {
     document.getElementById("playGame").removeEventListener("click", playGame);
     // document.getElementById("closeGame").removeEventListener("click", closeGame);
-
+    
     document.getElementById("firstDiv").innerHTML = /*html*/ `
     <div id="navbar">        
         <span><button id="mainMenuBtn" class="box">Main menu</button></span> <br>
@@ -36,6 +36,7 @@ function playGame() {
         <div id="scissors"><img src="assets/images/scissors-hand-2.webp"></div>
     </div>`;
     addEventListenersToGamePage();
+    reset();
     
     // Getting main menu button
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
@@ -170,6 +171,20 @@ function playerWinPage() {
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 
+}
+
+function updateScoreDisplay() {
+    document.getElementById("playerScore").textContent = playerScore;
+    document.getElementById("computerScore"). textContent = computerScore;
+    document.getElementById("drawScore"). textContent = drawScore;
+}
+
+
+function reset() {
+    playerScore = 0;
+    computerScore = 0;
+    drawScore = 0;
+    updateScoreDisplay();
 }
 
 //Main menu function
