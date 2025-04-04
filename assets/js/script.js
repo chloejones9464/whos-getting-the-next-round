@@ -1,11 +1,17 @@
 window.addEventListener('DOMContentLoaded', setup);
 
 function setup() {
-    document.getElementById("playGame").addEventListener("click", playGame);    
+    document.getElementById("playGame").addEventListener("click", playGame); 
+    document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);   
 }
 
 //Number of games slider 
+function numOfGamesSlider() {
+    const rangeSlider = document.querySelector(".form-range");
+    const sliderDisplay = document.getElementById("displayNumberForSlider");
 
+    sliderDisplay.innerText = rangeSlider.value;
+}
 
 // Changes divs to display the game content
 function playGame() {
@@ -15,7 +21,7 @@ function playGame() {
     document.getElementById("firstDiv").innerHTML = /*html*/ `
     <div id="navbar">        
         <span><button id="mainMenuBtn" class="box">Main menu</button></span> <br>
-        <span data-bs-toggle="modal" data-bs-target="#rulesModal" class="rules"><button
+        <span data-bs-toggle="modal" data-bs-target="#rulesModal" id="rulesGamePage" class="rules"><button
         class="box">Rules</button></span>
     </div>    
     <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>
@@ -253,9 +259,13 @@ function mainMenu() {
     </div>`;
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">
-        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play game</button> <br>                
-        <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal" data-bs-target="#rulesModal">Rules</button><br>        
-    </div>`;
+                <button type="button" class="btn btn-primary btn-lg" id="playGame">Play
+                    game</button> <br>
+                <button type="button" class="btn btn-primary btn-lg" id="numberOfGames" data-bs-toggle="modal"
+                    data-bs-target="#numberOfGamesModal">Number of games</button> <br>
+                <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal"
+                    data-bs-target="#rulesModal">Rules</button><br>
+            </div>`;
     document.getElementById("playGame").addEventListener("click", playGame);
 }
 

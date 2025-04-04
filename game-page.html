@@ -17,21 +17,22 @@
     <title>Who's getting the next round?</title>
 </head>
 
-<body id="gamePage">    
+<body id="gamePage">
     <!--Navbar-->
-    <div id="navbar">        
+    <div id="navbar">
         <span><button class="box">Main menu</button></span> <br>
-        <span data-bs-toggle="modal" data-bs-target="#rulesModal" class="rules"><button
+        <span data-bs-toggle="modal" data-bs-target="#rulesModal" class="rules" id="rulesGamePage"><button
                 class="box">Rules</button></span>
     </div>
     <!--Main content-->
-    <div class="container">        
+    <div class="container">
         <div id="firstDiv">
-            <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>           
-                <span class="score">Your Wins: <span id="playerScore">0</span></span> <br>
-                <span class="score">Your mate's wins: <span id="computerScore">0</span></span> <br>
-                <span class="score">Draws: <span id="drawScore">0</span></span>
+            <div id="gamePageHeading">
+                <h3 class="display-4">Who's getting the next round?</h3>
             </div>
+            <span class="score">Your Wins: <span id="playerScore">0</span></span> <br>
+            <span class="score">Your mate's wins: <span id="computerScore">0</span></span> <br>
+            <span class="score">Draws: <span id="drawScore">0</span></span>
         </div>
         <div id="secondDiv">
             <div id="computerSection">
@@ -42,16 +43,16 @@
         </div>
         <div id="thirdDiv">
             <div id="playerSection">
-                <div id="rock"><img src="assets/images/rock-hand-2.webp" /></div>
-                <div id="paper"><img src="assets/images/paper-hand-2.webp"></div>
-                <div id="scissors"><img src="assets/images/scissors-hand-2.webp"></div>
+                <div id="rock"><img src="assets/images/rock-hand-2.webp" alt="Rock hand"></div>
+                <div id="paper"><img src="assets/images/paper-hand-2.webp" alt="Paper hand"></div>
+                <div id="scissors"><img src="assets/images/scissors-hand-2.webp" alt="Scissor hand"></div>
 
             </div>
         </div>
     </div>
 
     <!--Rules Modal -->
-    <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rules" aria-hidden="true">
+    <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesGamePage" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">

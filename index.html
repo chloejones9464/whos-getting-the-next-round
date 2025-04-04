@@ -55,8 +55,9 @@
                     <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label for="numOfGamesRange" class="form-label"></label>
-                    <input type="range" class="form-range" min="1" max="10" value="1" id="numOfGamesRange">
+                    <label for="numOfGamesRange" class="form-label">Use the slider to pick the number of games you'd like to play</label>
+                    <p id="displayNumberForSlider">0</p>
+                    <input type="range" class="form-range" min="1" max="10" value="3" id="numOfGamesRange" oninput="numOfGamesSlider()">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -103,10 +104,9 @@
     </script>
     <!--Link to script.js-->
     <script src="assets/js/script.js"></script>
+    <footer>
+        <img src="assets/images/footerLogo.webp" alt="Who's getting the next round? logo">
+    </footer>    
 </body>
-
-<footer>
-    <img src="assets/images/footerLogo.webp" alt="Who's getting the next round? logo">
-</footer>
 
 </html>

@@ -1,3 +1,4 @@
+/*Importing Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 /*Global styling*/
@@ -23,9 +24,15 @@ body {
 
 .container {       
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
-    flex-direction: column;
-    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;    
+    -webkit-box-direction: normal;    
+        -ms-flex-direction: column;    
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 }
 
 /*Styling for Main menu page*/
@@ -58,6 +65,18 @@ input {
     background-color: var(--main-bg-color);
     color: var(--highlight-color);
     font-size: 1.2rem;
+}
+::-webkit-input-placeholder {
+    color: var(--highlight-color);
+}
+::-moz-placeholder {
+    color: var(--highlight-color);
+}
+:-ms-input-placeholder {
+    color: var(--highlight-color);
+}
+::-ms-input-placeholder {
+    color: var(--highlight-color);
 }
 ::placeholder {
     color: var(--highlight-color);
@@ -100,8 +119,11 @@ footer {
 }
 
 #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-self: end;  
+    -ms-grid-column-align: end;
+        justify-self: end;  
     margin-right: 10px;  
 }
 
@@ -110,9 +132,15 @@ footer {
 }
 
 .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -128,8 +156,12 @@ footer {
 }
 
 #computerSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     margin-top: 20px;        
 }
@@ -161,9 +193,15 @@ footer {
     height: 100px;
     position: absolute;
     margin-top: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 2rem;
     color: white;
 }
@@ -178,9 +216,15 @@ footer {
 }
 
 #playerSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 250px;      
     text-align: center;     
 }
@@ -188,12 +232,16 @@ footer {
 /*Styling the winner/loser/draw page*/
 #winner, #loser {
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .resultPageHeading, #winnerPara {
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #winnerPara, #scoreBoard, #navbar {
@@ -253,4 +301,3 @@ footer {
     }   
     
 }
-
