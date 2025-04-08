@@ -307,17 +307,17 @@ footer {
 
     /*Game Page media queries*/
     #computerChoice {
-        margin-top: 100px;
-        width: 200px;
-        height: 144px;
+        margin-top: 39px;
+        width: 157px;
+        height: 116px;
     }
 
     #computerChoice img {
-        width: 76px;
+        width: 65px;
     }
 
     #resultDisplay {
-        margin-top: 255px;
+        margin-top: 160px;
         width: 321px;
     }
 }
