@@ -6,7 +6,7 @@ function setup() {
 }
 
 // Getting the player name from the input field
-let playerName = document.getElementById("playerName").value;
+let playerName = document.getElementById("playerName").value || "Secret pub goer"; //Default name if not given
 
 //Number of games slider 
 function numOfGamesSlider() {
@@ -149,16 +149,18 @@ function playerWins() {
     }
 }
 
-function computerWins() {    
+function computerWins() {      
+    let wantedGames = localStorage.getItem("numberOfGames");
     if (wantedGames === null) {
         wantedGames = winningScore; // Default value if not set
-    }
+    }  
     if (computerScore === wantedGames) {
         computerWinPage();
     }
 }
 
-function draw() {
+function draw() {    
+    let wantedGames = localStorage.getItem("numberOfGames");
     if (wantedGames === null) {
         wantedGames = winningScore; // Default value if not set
     }
@@ -210,7 +212,7 @@ function computerWinPage() {
                 <p>Oh no, my dear defeated warrior—your rock was rolled, your paper was shredded, and your scissors got
                     safety-proofed. You came, you threw, you… well, you tried. But fate (and probably your opponent’s
                     shady mind games) had other plans. Don’t worry, though—losing at Pub Rock, Paper, Scissors just
-                    means you get the honor of buying the next round! So hold your head high, march to the bar with
+                    means you get the honor of buying the next round! So hold your head high ${playerName}, march to the bar with
                     dignity, and pretend this was all part of your master plan. 🍻😂</p>
             </div>`
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
@@ -234,7 +236,7 @@ function drawPage() {
     </div>`
     document.getElementById("secondDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
-                <p>You can chose to buy your own pints or give you luck another chance!!</p>
+                <p>You can chose to buy your own pints or give your luck another chance ${playerName}!!</p>
             </div>`
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">                
