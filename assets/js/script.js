@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', setup);
 
 function setup() {
-    document.getElementById("playGame").addEventListener("click", playGame); 
-    document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);   
+    document.getElementById("playGame").addEventListener("click", playGame);
+    document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);
 }
 
 // Getting the player name from the input field
@@ -15,13 +15,26 @@ function numOfGamesSlider() {
 
     sliderDisplay.innerText = rangeSlider.value;
     localStorage.setItem("numberOfGames", rangeSlider.value);
+
+    const winsToWin = parseInt(rangeSlider.value) * 3;
+}
+
+//Getting the number of games selected and multiplying by 3 to get the score needed to win 
+function getNumberOfGames() {
+    let selectedGames = localStorage.getItem("numberOfGames");
+    // Check if wantedGames is null or not set, and assign a default value if necessary
+    if (selectedGames === null) {
+        selectedGames = winningScore; // Default value if not set
+    } else {
+        selectedGames = parseInt(selectedGames) * 3;
+    }
+    return selectedGames;
 }
 
 // Changes divs to display the game content
 function playGame() {
     document.getElementById("playGame").removeEventListener("click", playGame);
-    // document.getElementById("closeGame").removeEventListener("click", closeGame);
-    
+
     document.getElementById("firstDiv").innerHTML = /*html*/ `
     <div id="navbar">       
         <h3 id="gamePageHeading">Who's getting the next round?</h3> 
@@ -50,7 +63,7 @@ function playGame() {
     </div>`;
     addEventListenersToGamePage();
     reset();
-    
+
     // Getting main menu button
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 };
@@ -60,28 +73,28 @@ function addEventListenersToGamePage() {
     document.getElementById("rock").addEventListener("click", () => playerHasChosen("Rock"));
     document.getElementById("paper").addEventListener("click", () => playerHasChosen("Paper"));
     document.getElementById("scissors").addEventListener("click", () => playerHasChosen("Scissors"));
-    
+
 }
 
 //create a function for computer choice
 function computerChoice() {
-    const options = ["Rock", "Paper", "Scissors"];   
+    const options = ["Rock", "Paper", "Scissors"];
     const randomChoice = Math.floor(Math.random() * options.length);
     return options[randomChoice];
 }
 
 
 //checking the results of the game
-function didPlayerWin(playerChoice, computerChoice) {    
+function didPlayerWin(playerChoice, computerChoice) {
     if (playerChoice === "Rock" && computerChoice === "Scissors") {
         return true;
-      }else if (playerChoice === "Scissors" && computerChoice === "Paper") {
+    } else if (playerChoice === "Scissors" && computerChoice === "Paper") {
         return true;
-      }  else if (playerChoice === "Paper" && computerChoice === "Rock") {
+    } else if (playerChoice === "Paper" && computerChoice === "Rock") {
         return true;
-      } else {
+    } else {
         return false;
-      }
+    }
 }
 
 
@@ -89,14 +102,14 @@ function didPlayerWin(playerChoice, computerChoice) {
 
 //displaying the results of the game
 function playerHasChosen(playerChoice) {
-    const computer = computerChoice();   
+    const computer = computerChoice();
     const resultDisplay = document.getElementById("resultDisplay");
-    const computerChoiceDisplay = document.getElementById("computerChoice");    
+    const computerChoiceDisplay = document.getElementById("computerChoice");
 
-    computerChoiceDisplay.innerHTML = `<img src="assets/images/${computer.toLowerCase()}-hand-2.webp" />`;    
+    computerChoiceDisplay.innerHTML = `<img src="assets/images/${computer.toLowerCase()}-hand-2.webp" />`;
     if (didPlayerWin(playerChoice, computer) === true) {
-        resultDisplay.innerHTML = "You win!"; 
-        displayResults("player");  
+        resultDisplay.innerHTML = "You win!";
+        displayResults("player");
     } else {
         if (playerChoice === computer) {
             resultDisplay.innerHTML = "DRAW! You both chose " + playerChoice;
@@ -104,8 +117,8 @@ function playerHasChosen(playerChoice) {
         } else {
             resultDisplay.innerHTML = "Your mate wins!";
             displayResults("computer");
-        }        
-    } 
+        }
+    }
 }
 
 let playerScore = 0;
@@ -125,52 +138,41 @@ function displayResults(result) {
 }
 
 function roundResults(result) {
-  if (result === "player"){
-    playerScore++;
-  } else if (result === "computer") {
-    computerScore++;
-  } else {
-    drawScore++;    
-  }  
-  playerWins();
-  computerWins();
-  draw();
+    if (result === "player") {
+        playerScore++;
+    } else if (result === "computer") {
+        computerScore++;
+    } else {
+        drawScore++;
+    }
+    playerWins();
+    computerWins();
+    draw();
 }
 
-//Player wins page
 
+
+//Player/Computer/Draw wins pages
 function playerWins() {
-    let wantedGames = localStorage.getItem("numberOfGames");
-    if (wantedGames === null) {
-        wantedGames = winningScore; // Default value if not set
+        if (playerScore === getNumberOfGames()) {
+            playerWinPage();
+        }
     }
-    if (playerScore === wantedGames) {
-        playerWinPage();
-    }
-}
 
-function computerWins() {      
-    let wantedGames = localStorage.getItem("numberOfGames");
-    if (wantedGames === null) {
-        wantedGames = winningScore; // Default value if not set
-    }  
-    if (computerScore === wantedGames) {
-        computerWinPage();
+function computerWins() {
+        if (computerScore === getNumberOfGames()) {
+            computerWinPage();
+        }
     }
-}
 
-function draw() {    
-    let wantedGames = localStorage.getItem("numberOfGames");
-    if (wantedGames === null) {
-        wantedGames = winningScore; // Default value if not set
+function draw() {
+        if (drawScore === getNumberOfGames()) {
+            drawPage();
+        }
     }
-    if (drawScore === wantedGames) {
-        drawPage();
-    }
-}
 
 function playerWinPage() {
-    
+
     const resultPageHeading = /*html*/ `
     <div>
         <div class="box resultPageHeading">
@@ -250,8 +252,8 @@ function drawPage() {
 
 function updateScoreDisplay() {
     document.getElementById("playerScore").textContent = playerScore;
-    document.getElementById("computerScore"). textContent = computerScore;
-    document.getElementById("drawScore"). textContent = drawScore;
+    document.getElementById("computerScore").textContent = computerScore;
+    document.getElementById("drawScore").textContent = drawScore;
 }
 
 
@@ -277,13 +279,12 @@ function mainMenu() {
     </div>`;
     document.getElementById("thirdDiv").innerHTML = /*html*/ `
     <div id="menu">
-                <button type="button" class="btn btn-primary btn-lg" id="playGame">Play
+                <button type="button" class="btn btn-primary" id="playGame">Play
                     game</button> <br>
-                <button type="button" class="btn btn-primary btn-lg" id="numberOfGames" data-bs-toggle="modal"
+                <button type="button" class="btn btn-primary" id="numberOfGames" data-bs-toggle="modal"
                     data-bs-target="#numberOfGamesModal">Number of games</button> <br>
-                <button type="button" class="btn btn-primary btn-lg" id="rules" data-bs-toggle="modal"
+                <button type="button" class="btn btn-primary" id="rules" data-bs-toggle="modal"
                     data-bs-target="#rulesModal">Rules</button><br>
             </div>`;
     document.getElementById("playGame").addEventListener("click", playGame);
 }
-

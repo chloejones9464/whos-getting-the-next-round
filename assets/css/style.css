@@ -44,8 +44,8 @@ body {
 #menu {
     justify-items: center;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 #heading {
@@ -222,7 +222,7 @@ footer {
 }
 
 #computerChoice img {
-    width: 83px;
+    width: 57px;
     margin-top: 15px;
 }
 
@@ -231,7 +231,7 @@ footer {
     width: 200px;
     height: 100px;
     position: absolute;
-    margin-top: 167px;
+    margin-top: 158px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,18 +241,19 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
 #playerSection img {
-    margin-top: 20px;
-    width: 80%;
+    margin-top: 12px;
+    width: 67%;
 }
 
 #rock img {
     margin-top: 41px;
 }
+
 
 #playerSection {
     display: -webkit-box;
@@ -295,7 +296,7 @@ footer {
 .mainMenu {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
-    width: 40%;
+    width: 100%;
     margin-bottom: 10px;
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
