@@ -8,55 +8,57 @@
     --main-bg-color: #114e31;
     --secondary-bg-color: #8f9135;
     --highlight-color: #f5945c;
-    --secondary-highlight-color: #c4943e;  
+    --secondary-highlight-color: #c4943e;
 }
 
-body {    
-    justify-items: center; 
+body {
+    justify-items: center;
     background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-blend-mode: soft-light;
     background-position: center center;
-    background-attachment: fixed;  
-    font-family: "Caveat Brush", "sans-serif";       
+    background-attachment: fixed;
+    font-family: "Caveat Brush", "sans-serif";
 }
 
-.container {       
-    margin-top: 30px;
+.container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    
-    -webkit-box-orient: vertical;    
-    -webkit-box-direction: normal;    
-        -ms-flex-direction: column;    
-            flex-direction: column;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 /*Styling for Main menu page*/
 #mainMenu {
-    background-image: url("../images/pub-bg-image.webp");    
+    background-image: url("../images/pub-bg-image.webp");
 }
 
-#heading, #enterName, #menu {  
+#heading,
+#enterName,
+#menu {
     justify-items: center;
-    text-align: center;       
+    text-align: center;
     margin: 10px;
-    padding: 10px;    
+    padding: 10px;
 }
+
 #heading {
     margin-top: 40px;
     margin-bottom: 0px;
     text-shadow: 2px 1px white;
-    color: var(--main-bg-color);    
+    color: var(--main-bg-color);
 }
 
 #enterName h3 {
     margin-bottom: 20px;
     color: var(--main-bg-color);
-    text-shadow: 2px 1px white;    
+    text-shadow: 2px 1px white;
 }
 
 input {
@@ -66,36 +68,43 @@ input {
     color: var(--highlight-color);
     font-size: 1.2rem;
 }
+
 ::-webkit-input-placeholder {
     color: var(--highlight-color);
 }
+
 ::-moz-placeholder {
     color: var(--highlight-color);
 }
+
 :-ms-input-placeholder {
     color: var(--highlight-color);
 }
+
 ::-ms-input-placeholder {
     color: var(--highlight-color);
 }
+
 ::placeholder {
     color: var(--highlight-color);
 }
 
-footer {    
-    margin-top: 20px;    
+footer {
+    margin-top: 20px;
 }
 
 /*Styling the buttons on the main menu page*/
-#playGame, #rules, #numberOfGames {
+#playGame,
+#rules,
+#numberOfGames {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 100%;
     margin-bottom: 10px;
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
-    font-size: 1.5rem;    
-} 
+    font-size: 1.5rem;
+}
 
 /*Styling the modals*/
 
@@ -105,7 +114,8 @@ footer {
     border: 2px solid var(--highlight-color);
 }
 
-.close, #save {
+.close,
+#save {
     background-color: var(--highlight-color);
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
@@ -114,8 +124,18 @@ footer {
 
 /*Styling for the game page*/
 
-#gamePage, #winner, #loser {
-    background-image: url("../images/pub-bg-image.webp");    
+/*Navbar styling*/
+.gamePageNavBtns {
+    background-color: var(--highlight-color);
+    color: var(--main-bg-color);
+    font-size: 1.1rem;
+
+}
+
+#gamePage,
+#winner,
+#loser {
+    background-image: url("../images/pub-bg-image.webp");
 }
 
 #navbar {
@@ -123,12 +143,12 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-grid-column-align: end;
-        justify-self: end;  
-    margin-right: 10px;  
+    justify-self: end;
+    margin-right: 10px;
 }
 
-#gamePageHeading h3 {
-    text-align: center;
+#gamePageHeading {
+    display: none;
 }
 
 .box {
@@ -136,23 +156,43 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
     background-color: var(--main-bg-color);
     color: var(--highlight-color);
     border: 2px solid var(--highlight-color);
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
-.scores {
-    font-size: 19px;
-    margin-top: 1px;
+#scoreBoard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--main-bg-color);
+    border: 2px solid var(--highlight-color);
+    border-radius: 5px;    
+    color: var(--highlight-color);
+}
+
+#scoreBoard span {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2px 5px;
 }
 
 #computerSection {
@@ -160,16 +200,15 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px;        
+    margin-top: 20px;
 }
 
 #computerSection h3 {
-    margin-bottom: 40px;
     color: var(--main-bg-color);
-    font-size: 50px;
+    font-size: 30px;
     text-shadow: 2px 2px var(--secondary-highlight-color);
     text-align: center;
 }
@@ -179,12 +218,12 @@ footer {
     width: 100px;
     height: 100px;
     position: absolute;
-    margin-top: 160px;
+    margin-top: 48px;
 }
 
 #computerChoice img {
     width: 83px;
-    margin-top: 15px; 
+    margin-top: 15px;
 }
 
 #resultDisplay {
@@ -192,26 +231,26 @@ footer {
     width: 200px;
     height: 100px;
     position: absolute;
-    margin-top: 280px;
+    margin-top: 167px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 2rem;
     color: white;
 }
 
 #playerSection img {
     margin-top: 20px;
-    width: 80%; 
+    width: 80%;
 }
 
-#rock img{
+#rock img {
     margin-top: 41px;
 }
 
@@ -220,35 +259,40 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 250px;      
-    text-align: center;     
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 208px;
+    text-align: center;
 }
 
 /*Styling the winner/loser/draw page*/
-#winner, #loser {
+#winner,
+#loser {
     text-align: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.resultPageHeading, #winnerPara {
+.resultPageHeading,
+#winnerPara {
     text-align: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-#winnerPara, #scoreBoard, #navbar {
+#winnerPara,
+#scoreBoard,
+#navbar {
     font-size: 1.5rem;
 }
 
-#playAgain, .mainMenu {
+#playAgain,
+.mainMenu {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 40%;
@@ -256,11 +300,6 @@ footer {
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
 }
-
-#mainMenuBtn {
-    font-size: 1.6rem;
-}
-
 
 /*Media queries for the main menu page*/
 @media screen and (min-width: 348px) {
@@ -273,7 +312,7 @@ footer {
     }
 
     #computerChoice img {
-        width: 76px; 
+        width: 76px;
     }
 
     #resultDisplay {
@@ -283,21 +322,37 @@ footer {
 }
 
 @media screen and (min-width: 353px) {
-    #playGame, #rules {
+
+    #playGame,
+    #rules {
         width: 50%;
-    }  
-   
+    }
+
     #numberOfGames {
         width: 50%
     }
 }
 
+@media screen and (min-width: 768px) {
+    #gamePageHeading {
+        display: block;
+        position: absolute;
+        left: 10px;
+        padding-right: 156px;
+        margin-top: 7px;
+    }
+}
+
 @media screen and (min-width: 992px) {
-    #playGame, #rules, #numberOfGames {
+
+    #playGame,
+    #rules,
+    #numberOfGames {
         width: 30%;
     }
+
     input {
         padding: 4px 8px;
-    }   
-    
+    }
+
 }

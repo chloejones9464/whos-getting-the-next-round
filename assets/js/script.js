@@ -23,13 +23,13 @@ function playGame() {
     // document.getElementById("closeGame").removeEventListener("click", closeGame);
     
     document.getElementById("firstDiv").innerHTML = /*html*/ `
-    <div id="navbar">        
-        <span><button id="mainMenuBtn" class="box">Main menu</button></span> <br>
-        <span data-bs-toggle="modal" data-bs-target="#rulesModal" id="rulesGamePage" class="rules"><button
-        class="box">Rules</button></span>
+    <div id="navbar">       
+        <h3 id="gamePageHeading">Who's getting the next round?</h3> 
+        <span><button id="mainMenuBtn" class="gamePageNavBtns">Main menu</button></span> <br>
+        <span data-bs-toggle="modal" data-bs-target="#rulesModal" id="rulesGamePage" ><button class="gamePageNavBtns">Rules</button></span>
     </div>    
-    <div id="gamePageHeading"><h3 class="display-4">Who's getting the next round?</h3></div>
-    <div id="scoreBoard" class="box">
+    
+    <div id="scoreBoard">
         <span>Your Wins: <span id="playerScore">0</span></span> <br>
         <span>Your mate's wins: <span id="computerScore">0</span></span> <br>
         <span>Draws: <span id="drawScore">0</span></span>
