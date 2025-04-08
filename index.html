@@ -39,7 +39,7 @@
                 <button type="button" class="btn btn-primary" id="playGame">Play
                     game</button> <br>
                 <button type="button" class="btn btn-primary" id="numberOfGames" data-bs-toggle="modal"
-                    data-bs-target="#numberOfGamesModal">Number of games</button> <br>
+                    data-bs-target="#numberOfGamesModal">Number of turns</button> <br>
                 <button type="button" class="btn btn-primary" id="rules" data-bs-toggle="modal"
                     data-bs-target="#rulesModal">Rules</button><br>
             </div>
@@ -51,13 +51,15 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-3" id="numberOfGamesLabel">Number of games</h1>
+                    <h1 class="modal-title fs-3" id="numberOfGamesLabel">Number of turns</h1>
                     <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label for="numOfGamesRange" class="form-label">Use the slider to pick the number of games you'd like to play</label>
-                    <p id="displayNumberForSlider">3</p>
-                    <input type="range" class="form-range" min="1" max="9" step="2" value="3" id="numOfGamesRange" oninput="numOfGamesSlider()">
+                    <label for="numOfGamesRange" class="form-label">Use the slider to pick the number of turns you get until you win!</label>
+                    <div id="sliderModalBody">
+                    <span><p class="display-6">Best of</p></span><span><p class="display-6" id="displayNumberForSlider">3</p></span>
+                    </div>
+                    <input type="range" class="form-range" min="3" max="11" step="2" value="3" id="numOfGamesRange" oninput="numOfGamesSlider()">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>

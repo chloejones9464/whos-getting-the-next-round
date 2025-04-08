@@ -108,6 +108,14 @@ footer {
 
 /*Styling the modals*/
 
+#sliderModalBody {
+    display: flex;    
+}
+
+#sliderModalBody span {
+    margin-right: 13px;
+}
+
 .modal-content {
     background-color: var(--main-bg-color);
     color: var(--highlight-color);

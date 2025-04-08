@@ -26,7 +26,7 @@ function getNumberOfGames() {
     if (selectedGames === null) {
         selectedGames = winningScore; // Default value if not set
     } else {
-        selectedGames = parseInt(selectedGames) * 3;
+        selectedGames = parseInt(selectedGames);
     }
     return selectedGames;
 }
