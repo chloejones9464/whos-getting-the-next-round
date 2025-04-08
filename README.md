@@ -130,6 +130,8 @@ That was stressful...
 I was working on the pages Winner and Loser ready to move onto my JavaScript element of the project when I flicked over to the home page to find that the background and styles were all over the shop!
 I looked for the problem and found that the #mainMenu was used on the home page and for the button to take you back there on the Winner and Loser pages. To fix the issue, I created a class for the button with the styles in it and Voila! Back to normal.
 
+
+
 ## Deployment
 
 #### Creating Repository on GitHub

@@ -5,12 +5,16 @@ function setup() {
     document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);   
 }
 
+// Getting the player name from the input field
+let playerName = document.getElementById("playerName").value;
+
 //Number of games slider 
 function numOfGamesSlider() {
     const rangeSlider = document.querySelector(".form-range");
     const sliderDisplay = document.getElementById("displayNumberForSlider");
 
     sliderDisplay.innerText = rangeSlider.value;
+    localStorage.setItem("numberOfGames", rangeSlider.value);
 }
 
 // Changes divs to display the game content
@@ -136,35 +140,47 @@ function roundResults(result) {
 //Player wins page
 
 function playerWins() {
-    if (playerScore === winningScore) {
+    let wantedGames = localStorage.getItem("numberOfGames");
+    if (wantedGames === null) {
+        wantedGames = winningScore; // Default value if not set
+    }
+    if (playerScore === wantedGames) {
         playerWinPage();
     }
 }
 
-function computerWins() {
-    if (computerScore === winningScore) {
+function computerWins() {    
+    if (wantedGames === null) {
+        wantedGames = winningScore; // Default value if not set
+    }
+    if (computerScore === wantedGames) {
         computerWinPage();
     }
 }
 
 function draw() {
-    if (drawScore === winningScore) {
+    if (wantedGames === null) {
+        wantedGames = winningScore; // Default value if not set
+    }
+    if (drawScore === wantedGames) {
         drawPage();
     }
 }
 
 function playerWinPage() {
-    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    
+    const resultPageHeading = /*html*/ `
     <div>
         <div class="box resultPageHeading">
             <h1>TELL YOUR MATE WHAT
             <br> YOU WANT FROM THE BAR!</h1>
         </div>
     </div>`
+    document.getElementById("firstDiv").innerHTML = resultPageHeading;
     document.getElementById("secondDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>Ladies and gentlemen, we have a champion! Against all odds, defying the laws of probability (and
-                    sobriety), YOU have emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
+                    sobriety), ${playerName} has emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
                     the cunning of a fox, the reflexes of a caffeinated squirrel, and the sheer luck of someone who
                     always finds money in old jeans, you have crushed your opponent’s spirits like a well-placed rock
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
