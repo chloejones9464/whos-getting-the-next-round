@@ -35,7 +35,7 @@ function getNumberOfGames() {
 function playGame() {
     document.getElementById("playGame").removeEventListener("click", playGame);
 
-    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    document.getElementById("topDiv").innerHTML = /*html*/ `
     <div id="navbar">       
         <h3 id="gamePageHeading">Who's getting the next round?</h3> 
         <span><button id="mainMenuBtn" class="gamePageNavBtns">Main menu</button></span> <br>
@@ -48,14 +48,14 @@ function playGame() {
         <span>Draws: <span id="drawScore">0</span></span>
     </div>`;
 
-    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div id="computerSection">
         <h3 class="display-4">Your mate's choice</h3>
         <div id="computerChoice"></div>
         <div id="resultDisplay"></div>
     </div>`;
 
-    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="playerSection">
         <div id="rock"><img src="assets/images/rock-hand-2.webp" /></div>
         <div id="paper"><img src="assets/images/paper-hand-2.webp"></div>
@@ -154,22 +154,22 @@ function roundResults(result) {
 
 //Player/Computer/Draw wins pages
 function playerWins() {
-        if (playerScore === getNumberOfGames()) {
-            playerWinPage();
-        }
+    if (playerScore === getNumberOfGames()) {
+        playerWinPage();
     }
+}
 
 function computerWins() {
-        if (computerScore === getNumberOfGames()) {
-            computerWinPage();
-        }
+    if (computerScore === getNumberOfGames()) {
+        computerWinPage();
     }
+}
 
 function draw() {
-        if (drawScore === getNumberOfGames()) {
-            drawPage();
-        }
+    if (drawScore === getNumberOfGames()) {
+        drawPage();
     }
+}
 
 function playerWinPage() {
 
@@ -180,8 +180,8 @@ function playerWinPage() {
             <br> YOU WANT FROM THE BAR!</h1>
         </div>
     </div>`
-    document.getElementById("firstDiv").innerHTML = resultPageHeading;
-    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    document.getElementById("topDiv").innerHTML = resultPageHeading;
+    document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>Ladies and gentlemen, we have a champion! Against all odds, defying the laws of probability (and
                     sobriety), ${playerName} has emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
@@ -190,9 +190,9 @@ function playerWinPage() {
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
                     bragging rights and a free round of drinks.🍻👏</p>
             </div>`
-    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
-        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
+        <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
         <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
     </div>`
     document.getElementById("playGame").addEventListener("click", playGame);
@@ -201,7 +201,7 @@ function playerWinPage() {
 }
 
 function computerWinPage() {
-    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    document.getElementById("topDiv").innerHTML = /*html*/ `
     <div>
                 <div class="box resultPageHeading">
                     <h1>DIG DEEP AND
@@ -209,7 +209,7 @@ function computerWinPage() {
                 </div>
             </div>
     </div>`
-    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>Oh no, my dear defeated warrior—your rock was rolled, your paper was shredded, and your scissors got
                     safety-proofed. You came, you threw, you… well, you tried. But fate (and probably your opponent’s
@@ -217,9 +217,9 @@ function computerWinPage() {
                     means you get the honor of buying the next round! So hold your head high ${playerName}, march to the bar with
                     dignity, and pretend this was all part of your master plan. 🍻😂</p>
             </div>`
-    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
-        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
+        <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
         <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>       
     </div>`
     document.getElementById("playGame").addEventListener("click", playGame);
@@ -228,7 +228,7 @@ function computerWinPage() {
 }
 
 function drawPage() {
-    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    document.getElementById("topDiv").innerHTML = /*html*/ `
     <div>
                 <div class="box resultPageHeading">
                     <h1>IT'S A
@@ -236,13 +236,13 @@ function drawPage() {
                 </div>
             </div>
     </div>`
-    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>You can chose to buy your own pints or give your luck another chance ${playerName}!!</p>
             </div>`
-    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
-        <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
+        <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
         <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
     </div>`
     document.getElementById("playGame").addEventListener("click", playGame);
@@ -267,19 +267,19 @@ function reset() {
 //Main menu function
 
 function mainMenu() {
-    document.getElementById("firstDiv").innerHTML = /*html*/ `
+    document.getElementById("topDiv").innerHTML = /*html*/ `
     <div id="heading" class="heading">
         <h1 class="display-1">Who's getting the next round?</h1>
         <h2 class="display-4">Rock, Paper, Scissors game</h2>
     </div>`;
-    document.getElementById("secondDiv").innerHTML = /*html*/ `
+    document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div id="enterName">
         <h3 class="display-5">Who's playing?</h3>
         <input type="text" id="playerName" placeholder="Enter player name" required>
     </div>`;
-    document.getElementById("thirdDiv").innerHTML = /*html*/ `
+    document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">
-                <button type="button" class="btn btn-primary" id="playGame">Play
+                <button type="button" class="btn btn-primary playGame" id="playGame">Play
                     game</button> <br>
                 <button type="button" class="btn btn-primary" id="numberOfGames" data-bs-toggle="modal"
                     data-bs-target="#numberOfGamesModal">Number of games</button> <br>

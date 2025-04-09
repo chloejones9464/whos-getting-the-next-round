@@ -72,13 +72,25 @@ Check compatability with different browsers
 ### Responsiveness
 Screenshots of the responsivness, pick few devices (from 320px top 1200px)
 ### Code Validation
-Validate your code HTML, CSS (all pages/files need to be validated!!!), display screenshots
+This [link](validation.md) will take you to the screentshot of the validation checks I'd run for all my pages.
+There were a few minor errors that popped up but was mainly the duplicate of ids and the background image in the body tag.
 ### Manual Testing user stories or/and features
 Test all your user stories, you an create table 
 User Story |  Test | Pass
 --- | --- | :---:
-paste here you user story | what is visible to the user and what action they should perform | &check;
+As a player, I want a main menu that is has a clear structure so that I will be able to navigate the page with ease. | The user will see the main page with good contrasting colors, easy navigation to play the game, choosing the number of turns they'd like to take and the rules that will pop out in a modal with clear, funny and informative detail of the game. 
+The user is able to click on the play game button to display the game page, click on the number of turns button to adjust how many games they'd like to play, click the rules button to display the rules modal and enter their name in the input above the buttons| &check;
+--- | --- | :---:
+As a player, I want to have a choice of a number games to play so that I can pick one that's best for me. | There is a clear button on the home page for the user to choose the 'best of' number of turns until they win. This is in place to give the user the element of control and for them to decide what works for them. They will be able to change the number of turn before the game end with the winner reaching the number chosen by the user. | &check;
+--- | --- | :---:
+As a player, I would like to have instruction to the game so that I understand how the game works.| The instructions/rules button is placed at the bottom of the main menu and is clearly labelled should the user need to give it a read. Once the button is clicked, a modal pops up over the page to show the rules of the game. This is also available on the game page if the player need a refresh of the rules. | &check;
+--- | --- | :---:
+As a player, I would like to have the game page to be easy to look at so that I won't have trouble playing the game. | From the main menu, once clicking on the play game button, it will take you to the game page. This is displayed by changing the content of the divs on the main page, making the page's loading time a lot quicker! The player is able to start the game immediately. Once the player clickes on their choice the computer's choice will display the same time, giving an instant result. There is a scoreboard above the game area, displaying all scores from the player, computer and the draw score. The main menu and rules button is place at the to right if the screen and is visable on small and larger devices throughout the time on that page.| &check;
+--- | --- | :---:
+As a player, I would like to see the end result of the game so that I can see if I've won I can CELEBRATE or if I've lost, I'll drown my sorrows. | what is visible to the user and what action they should perform | &check;
 - and attach screenshot
+
+
 
 ## Bugs
 
@@ -130,7 +142,37 @@ That was stressful...
 I was working on the pages Winner and Loser ready to move onto my JavaScript element of the project when I flicked over to the home page to find that the background and styles were all over the shop!
 I looked for the problem and found that the #mainMenu was used on the home page and for the button to take you back there on the Winner and Loser pages. To fix the issue, I created a class for the button with the styles in it and Voila! Back to normal.
 
+### Validator for HTML pages
+The validator pulled up the background image I'd placed in the body tag.
+I corrected this by putting the styling in the style.css sheet, but I came across an issue. there was no background image!!
+I searched online and used the help from Stack Overflow, I took the "" out of the path to the image. Still no image! I then removed assets and replaced with .. and re-added the "" to the path.....BOOM, image!
+I went on to change this on the game, winner, loser and draw pages.
 
+### Event listeners!!
+I couldn't, for the life of me, think how to connect the event listeners to the game page. So I reached out to my fab mentor Matt for a little guidance. He'd explained in detail about why we need to call the event listener function in the playGame() function.
+Matt also helped debug a function that was in my code during our call.
+The code wasn't registering the computerChoice function because I was comparing playerChoice and copmuterChoice when the computer was declated a variable with the value of computerChoice. This was changed, tested and all worked perfectly.
+
+### Changing the HTML to the winner/loser/draw pages content
+I was working on getting the content to show for when a player/computer wins or whether there was a draw. I'd managed to get this working but then had an error pop up in the console; 
+"Uncaught TypeError
+playerWinnPage
+playerWin
+roundResults
+displayResults
+playerHasChosen
+HTMLDivElement
+
+I had to change the ids on the play again buttong and menu button. This corrected the issue as they had the same id and clashed.
+
+
+### Close game function
+I had a close game function in my code at the very beginning of my project but then researched that I'm unable to close the window through the function.
+This is becaosue the function can only work if the game was opened via JavaScript. With this in mind, I decided to remove the code from the game.
+
+### btn class from Bootstrap
+The button, when hovered over, was showing the classic Bootstrap blue background and white text. This was an issue as this did not tie into my color scheme and would look out of place.
+I did a little research and found from Quora that I was able to alter the button hover state and place an important at the end of each style, this ensured that the Boostrap styling is overwritten.
 
 ## Deployment
 
@@ -157,6 +199,7 @@ ColorSpace
 Pixelied - PNG - WEBP
 Google Fonts
 Favicon
+Geekforgeeks - Helped me with my range slider development.
 
 
   - Code & Text Content
