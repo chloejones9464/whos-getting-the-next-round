@@ -66,7 +66,7 @@ For my project I used;
 ## Testing
 Important part of your README!!!
 ### Google's Lighthouse Performance
-Screenshots of certain pages and scores (mobile and desktop)
+Follow this [link](lighthouse.md) to view the Google Lighthouse Performance on mobiles and desktops!
 ### Browser Compatibility
 Check compatability with different browsers
 ### Responsiveness
@@ -209,6 +209,7 @@ Pixelied - PNG - WEBP
 Google Fonts
 Favicon
 Geekforgeeks - Helped me with my range slider development.
+Pixabay.com - I had the sound effects from this website for my game.
 
 
   - Code & Text Content

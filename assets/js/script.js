@@ -255,7 +255,7 @@ function computerWinPage() {
             </div>
     </div>`;
     document.getElementById("middleDiv").innerHTML = /*html*/ `
-    <div class="box" id="winnerPara">
+    <div class="box" id="resultPara">
                 <p>Oh no, my dear defeated warrior—your rock was rolled, your paper was shredded, and your scissors got
                     safety-proofed. You came, you threw, you… well, you tried. But fate (and probably your opponent’s
                     shady mind games) had other plans. Don’t worry, though—losing at Pub Rock, Paper, Scissors just
@@ -289,7 +289,7 @@ function drawPage() {
             </div>
     </div>`;
     document.getElementById("middleDiv").innerHTML = /*html*/ `
-    <div class="box" id="winnerPara">
+    <div class="box" id="resultPara">
                 <p>You can chose to buy your own pints or give your luck another chance <strong>${name}</strong>!!</p>
             </div>`;
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
@@ -330,3 +330,28 @@ function mainMenu() {
     localStorage.clear(); 
     playerName(); // Call the function to set up player name input
 }
+
+// throw an error 404 if the page is not found
+function pageNotFound() {
+    document.getElementById("mainMenu").innerHTML = /*html*/ `
+    <div class="container">
+        <div id="topDiv">
+
+        </div>
+        <div id="middleDiv">
+            <div id="error">
+            <h1>404</h1>
+            <div>Ops! looks like you've gone to the wrong pub!</div>
+            <div>Don't worry, I'll give you a lift</div>
+            <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Jump in!!
+                (Main Menu)</button>
+            </div>
+        </div>
+        <div id="bottomDiv">
+
+        </div>
+    </div>`;
+    
+// Add event listener to the main menu button on the error page
+    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
+} 
