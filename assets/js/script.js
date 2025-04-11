@@ -5,9 +5,28 @@ function setup() {
     document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);
 }
 
-// Getting the player name from the input field
-let playerName = document.getElementById("playerName").value || "Secret pub goer"; //Default name if not given
+function playerName() {
+    localStorage.clear(); // Clear local storage when going back to main menu
+    // Getting the player name from the input field and storing it in local storage
+    let playerNameInput = document.getElementById("playerName");
 
+    let savedName = localStorage.getItem("playerName");
+
+    if (savedName) {
+        playerNameInput.value = savedName;
+    }
+
+    playerNameInput.addEventListener("input", function () {
+        let name = playerNameInput.value.trim();
+        // Checking if the player name is empty and give default name
+        if (name === "") {
+            name = "Secret pub warrior";
+        }
+        localStorage.setItem("playerName", name);
+        console.log("Player name saved:", name);
+    });
+}
+playerName(); // Call the function to set up player name input
 //Number of games slider 
 function numOfGamesSlider() {
     const rangeSlider = document.querySelector(".form-range");
@@ -15,8 +34,6 @@ function numOfGamesSlider() {
 
     sliderDisplay.innerText = rangeSlider.value;
     localStorage.setItem("numberOfGames", rangeSlider.value);
-
-    const winsToWin = parseInt(rangeSlider.value) * 3;
 }
 
 //Getting the number of games selected and multiplying by 3 to get the score needed to win 
@@ -98,8 +115,6 @@ function didPlayerWin(playerChoice, computerChoice) {
 }
 
 
-
-
 //displaying the results of the game
 function playerHasChosen(playerChoice) {
     const computer = computerChoice();
@@ -173,6 +188,10 @@ function draw() {
 
 function playerWinPage() {
 
+    // Getting the player name from local storage or using a default name
+    let name = localStorage.getItem("playerName") || "Secret pub warrior";
+
+    // Displaying the result page for the player win
     const resultPageHeading = /*html*/ `
     <div>
         <div class="box resultPageHeading">
@@ -184,7 +203,7 @@ function playerWinPage() {
     document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>Ladies and gentlemen, we have a champion! Against all odds, defying the laws of probability (and
-                    sobriety), ${playerName} has emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
+                    sobriety), <strong>${name}</strong> has emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
                     the cunning of a fox, the reflexes of a caffeinated squirrel, and the sheer luck of someone who
                     always finds money in old jeans, you have crushed your opponent’s spirits like a well-placed rock
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
@@ -201,6 +220,11 @@ function playerWinPage() {
 }
 
 function computerWinPage() {
+
+    // Getting the player name from local storage or using a default name
+    let name = localStorage.getItem("playerName") || "Secret pub warrior";
+
+    // Displaying the result page for the computer win
     document.getElementById("topDiv").innerHTML = /*html*/ `
     <div>
                 <div class="box resultPageHeading">
@@ -214,7 +238,7 @@ function computerWinPage() {
                 <p>Oh no, my dear defeated warrior—your rock was rolled, your paper was shredded, and your scissors got
                     safety-proofed. You came, you threw, you… well, you tried. But fate (and probably your opponent’s
                     shady mind games) had other plans. Don’t worry, though—losing at Pub Rock, Paper, Scissors just
-                    means you get the honor of buying the next round! So hold your head high ${playerName}, march to the bar with
+                    means you get the honor of buying the next round! So hold your head high <strong>${name}</strong>, march to the bar with
                     dignity, and pretend this was all part of your master plan. 🍻😂</p>
             </div>`
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
@@ -228,6 +252,11 @@ function computerWinPage() {
 }
 
 function drawPage() {
+
+    // Getting the player name from local storage or using a default name
+    let name = localStorage.getItem("playerName") || "Secret pub warrior";
+
+    // Displaying the result page for the draw
     document.getElementById("topDiv").innerHTML = /*html*/ `
     <div>
                 <div class="box resultPageHeading">
@@ -238,7 +267,7 @@ function drawPage() {
     </div>`
     document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
-                <p>You can chose to buy your own pints or give your luck another chance ${playerName}!!</p>
+                <p>You can chose to buy your own pints or give your luck another chance <strong>${name}</strong>!!</p>
             </div>`
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
@@ -264,27 +293,12 @@ function reset() {
     updateScoreDisplay();
 }
 
-//Main menu function
+// Store original content when the page loads
+let originalContent = document.getElementById("mainMenu").innerHTML;
 
 function mainMenu() {
-    document.getElementById("topDiv").innerHTML = /*html*/ `
-    <div id="heading" class="heading">
-        <h1 class="display-1">Who's getting the next round?</h1>
-        <h2 class="display-4">Rock, Paper, Scissors game</h2>
-    </div>`;
-    document.getElementById("middleDiv").innerHTML = /*html*/ `
-    <div id="enterName">
-        <h3 class="display-5">Who's playing?</h3>
-        <input type="text" id="playerName" placeholder="Enter player name" required>
-    </div>`;
-    document.getElementById("bottomDiv").innerHTML = /*html*/ `
-    <div id="menu">
-                <button type="button" class="btn btn-primary playGame" id="playGame">Play
-                    game</button> <br>
-                <button type="button" class="btn btn-primary" id="numberOfGames" data-bs-toggle="modal"
-                    data-bs-target="#numberOfGamesModal">Number of games</button> <br>
-                <button type="button" class="btn btn-primary" id="rules" data-bs-toggle="modal"
-                    data-bs-target="#rulesModal">Rules</button><br>
-            </div>`;
-    document.getElementById("playGame").addEventListener("click", playGame);
+    document.getElementById("mainMenu").innerHTML = originalContent;
+    setup();
+    localStorage.clear(); // Clear local storage when going back to main menu
+    playerName(); // Call the function to set up player name input
 }

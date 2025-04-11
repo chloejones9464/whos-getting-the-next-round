@@ -174,6 +174,9 @@ This is becaosue the function can only work if the game was opened via JavaScrip
 The button, when hovered over, was showing the classic Bootstrap blue background and white text. This was an issue as this did not tie into my color scheme and would look out of place.
 I did a little research and found from Quora that I was able to alter the button hover state and place an important at the end of each style, this ensured that the Boostrap styling is overwritten.
 
+### Dodgy commit
+I'd spend days trying to work out the JavaScript for the first element of the game and after working at it for quite some time, I forgot to commit in-between my development! I went on to delete the code and add it back in bit by bit and commit each time so that the commit is much smaller and traceable.
+
 ## Deployment
 
 #### Creating Repository on GitHub
