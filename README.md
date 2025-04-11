@@ -177,6 +177,12 @@ I did a little research and found from Quora that I was able to alter the button
 ### Dodgy commit
 I'd spend days trying to work out the JavaScript for the first element of the game and after working at it for quite some time, I forgot to commit in-between my development! I went on to delete the code and add it back in bit by bit and commit each time so that the commit is much smaller and traceable.
 
+### Grabbing the username
+I found this part of the project quite difficult. I wanted to use the user name in the paragraphs I'd made for when the player wins, loses or has a draw with the computer. I tried everything from websites to ChatGPT!
+In the end, I combined the both to get the outcome I desired.
+I created a function that I would call at the loading of the front page then I called it again when returning to the main menu page.
+It's safe to say I deserved my Gin and takeaway that night!
+
 ## Deployment
 
 #### Creating Repository on GitHub

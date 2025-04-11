@@ -295,14 +295,14 @@ footer {
 }
 
 .resultPageHeading,
-#winnerPara {
+#resultPara {
     text-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
-#winnerPara,
+#resultPara,
 #scoreBoard,
 #navbar {
     font-size: 1.5rem;
@@ -324,6 +324,19 @@ footer {
     margin-bottom: 10px !important;
     border-bottom: 2px solid var(--main-bg-color) !important;
     border-right: 2px solid var(--main-bg-color) !important;
+}
+
+#error {
+    border-radius: 10px;
+    background-color: var(--highlight-color);
+    color: var(--main-bg-color);
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--main-bg-color);
+    border-right: 2px solid var(--main-bg-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 250px;
 }
 
 /*Media queries for the main menu page*/

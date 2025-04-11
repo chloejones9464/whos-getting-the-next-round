@@ -98,7 +98,7 @@ function playGame() {
 
     // Getting main menu button
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
-};
+}
 
 // Event listeners for player's choice
 function addEventListenersToGamePage() {
@@ -161,7 +161,7 @@ function displayResults(result) {
     const computerScoreDisplay = document.getElementById("computerScore");
     const drawScoreDisplay = document.getElementById("drawScore");
 
-    roundResults(result)
+    roundResults(result);
     playerScoreDisplay.innerText = playerScore;
     computerScoreDisplay.innerText = computerScore;
     drawScoreDisplay.innerText = drawScore;
@@ -215,7 +215,7 @@ function playerWinPage() {
             <h1>TELL YOUR MATE WHAT
             <br> YOU WANT FROM THE BAR!</h1>
         </div>
-    </div>`
+    </div>`;
     document.getElementById("topDiv").innerHTML = resultPageHeading;
 
     const winnerText = /*html*/ `
@@ -226,13 +226,13 @@ function playerWinPage() {
                     always finds money in old jeans, you have crushed your opponent’s spirits like a well-placed rock
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
                     bragging rights and a free round of drinks.🍻👏</p>
-            </div>`
+            </div>`;
     document.getElementById("middleDiv").innerHTML = winnerText;
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
         <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
-    </div>`
+    </div>`;
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 
@@ -253,7 +253,7 @@ function computerWinPage() {
                         <br> GET TO THE BAR</h1>
                 </div>
             </div>
-    </div>`
+    </div>`;
     document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>Oh no, my dear defeated warrior—your rock was rolled, your paper was shredded, and your scissors got
@@ -261,12 +261,12 @@ function computerWinPage() {
                     shady mind games) had other plans. Don’t worry, though—losing at Pub Rock, Paper, Scissors just
                     means you get the honor of buying the next round! So hold your head high <strong>${name}</strong>, march to the bar with
                     dignity, and pretend this was all part of your master plan. 🍻😂</p>
-            </div>`
+            </div>`;
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
         <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>       
-    </div>`
+    </div>`;
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 
@@ -287,16 +287,16 @@ function drawPage() {
                         <br> DRAW!</h1>
                 </div>
             </div>
-    </div>`
+    </div>`;
     document.getElementById("middleDiv").innerHTML = /*html*/ `
     <div class="box" id="winnerPara">
                 <p>You can chose to buy your own pints or give your luck another chance <strong>${name}</strong>!!</p>
-            </div>`
+            </div>`;
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
         <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
-    </div>`
+    </div>`;
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 
