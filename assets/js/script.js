@@ -1,5 +1,12 @@
 window.addEventListener('DOMContentLoaded', setup);
 
+let backgroundNoise = new Audio ("assets/sounds/crowded-pub.mp3");
+backgroundNoise.loop = true; // Loop the background noise
+
+let winnerNoise = new Audio ("assets/sounds/winner-noise.mp3");
+let loserNoise = new Audio ("assets/sounds/loser-noise.mp3");
+let drawNoise = new Audio ("assets/sounds/draw-noise.mp3");
+
 function setup() {
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);
@@ -49,7 +56,10 @@ function getNumberOfGames() {
 }
 
 // Changes divs to display the game content
-function playGame() {
+function playGame() { 
+    // Play background noise when the game starts
+    backgroundNoise.play();
+    backgroundNoise.loop = true; // Loop the background noise
     document.getElementById("playGame").removeEventListener("click", playGame);
 
     document.getElementById("topDiv").innerHTML = /*html*/ `
@@ -187,7 +197,9 @@ function draw() {
 }
 
 function playerWinPage() {
-
+    // Stop the background noise when the game ends
+    backgroundNoise.pause();
+    winnerNoise.play(); // Play the winner noise
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
@@ -220,7 +232,9 @@ function playerWinPage() {
 }
 
 function computerWinPage() {
-
+    // Stop the background noise when the game ends
+    backgroundNoise.pause();
+    loserNoise.play(); // Play the loser noise    
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
@@ -252,7 +266,9 @@ function computerWinPage() {
 }
 
 function drawPage() {
-
+    // Stop the background noise when the game ends
+    backgroundNoise.pause();
+    drawNoise.play(); // Play the draw noise
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
