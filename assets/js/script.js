@@ -57,7 +57,12 @@ function getNumberOfGames() {
 
 // Changes divs to display the game content
 function playGame() { 
-    // Play background noise when the game starts
+    // Stop noise from winner/loser/draw pages
+    winnerNoise.pause();
+    loserNoise.pause();
+    drawNoise.pause();
+
+    // Play background noise when the game starts    
     backgroundNoise.play();
     backgroundNoise.loop = true; // Loop the background noise
     document.getElementById("playGame").removeEventListener("click", playGame);
@@ -212,8 +217,9 @@ function playerWinPage() {
         </div>
     </div>`
     document.getElementById("topDiv").innerHTML = resultPageHeading;
-    document.getElementById("middleDiv").innerHTML = /*html*/ `
-    <div class="box" id="winnerPara">
+
+    const winnerText = /*html*/ `
+    <div class="box" id="resultPara">
                 <p>Ladies and gentlemen, we have a champion! Against all odds, defying the laws of probability (and
                     sobriety), <strong>${name}</strong> has emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
                     the cunning of a fox, the reflexes of a caffeinated squirrel, and the sheer luck of someone who
@@ -221,6 +227,7 @@ function playerWinPage() {
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
                     bragging rights and a free round of drinks.🍻👏</p>
             </div>`
+    document.getElementById("middleDiv").innerHTML = winnerText;
     document.getElementById("bottomDiv").innerHTML = /*html*/ `
     <div id="menu">                
         <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
@@ -315,6 +322,11 @@ let originalContent = document.getElementById("mainMenu").innerHTML;
 function mainMenu() {
     document.getElementById("mainMenu").innerHTML = originalContent;
     setup();
-    localStorage.clear(); // Clear local storage when going back to main menu
+    // Stop noise from winner/loser/draw pages
+    winnerNoise.pause();
+    loserNoise.pause();
+    drawNoise.pause();
+    // Clear local storage when going back to main menu
+    localStorage.clear(); 
     playerName(); // Call the function to set up player name input
 }
