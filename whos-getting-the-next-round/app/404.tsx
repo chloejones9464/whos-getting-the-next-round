@@ -7,12 +7,12 @@ export default function custom404() {
     const router = useRouter();
 
     const mainMenu = () => {
-        router.push('/'); // Redirect to the main menu page
+        router.push('/index.html'); // Redirect to the main menu page
     };
 
     return <div className='styles.errorContainer'>
     <h1>404</h1>
-    <div>Ops! looks like you've gone to the wrong pub!</div>
+    <div>Ops! Looks like you've gone to the wrong pub!</div> <br/>
     <div>Don't worry, I'll give you a lift</div>
     <button type="button" onClick={mainMenu} className='styles.errorMainMenuButton' >Jump in!!
         (Main Menu)</button>

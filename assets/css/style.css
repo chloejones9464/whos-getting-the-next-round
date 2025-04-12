@@ -326,17 +326,37 @@ footer {
     border-right: 2px solid var(--main-bg-color) !important;
 }
 
+/*Styling the error page*/
+
 #error {
     border-radius: 10px;
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
     width: 100%;
     margin-bottom: 10px;
+    border: .1px solid black;
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
     font-size: 1.5rem;
     text-align: center;
     margin-top: 250px;
+}
+
+#error #errorMainMenuBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#error #errorMainMenuBtn a {
+    background-color: var(--main-bg-color);
+    padding: 5px 10px;
+    color: var(--highlight-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-bottom: var(--secondary-highlight-color) 3px solid;
+    border-right: var(--secondary-highlight-color) 3px solid;
 }
 
 /*Media queries for the main menu page*/
