@@ -31,6 +31,10 @@
 * As a player, I would like a close button on the main menu so that i can choose to close the game quickly and simply.
 
 #### JavaScript User Stories
+* As a player, I want each hand in the game to show react when I haver over them so that I know I have to click on then to play the game.
+
+Given that the player is on the game page, when the player haver's over the buttons, then the buttons(when hovered over) will change in size and return when the player leave the button
+
 
 
 ### Wireframes
@@ -210,7 +214,7 @@ Google Fonts
 Favicon
 Geekforgeeks - Helped me with my range slider development.
 Pixabay.com - I had the sound effects from this website for my game.
-
+dhwise.com - Helped hugely with my 404 error page set up!!
 
   - Code & Text Content
   
