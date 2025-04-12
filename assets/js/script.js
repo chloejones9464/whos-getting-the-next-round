@@ -118,15 +118,18 @@ function computerChoice() {
 
 //checking the results of the game
 function didPlayerWin(playerChoice, computerChoice) {
-    if (playerChoice === "Rock" && computerChoice === "Scissors") {
-        return true;
-    } else if (playerChoice === "Scissors" && computerChoice === "Paper") {
-        return true;
-    } else if (playerChoice === "Paper" && computerChoice === "Rock") {
-        return true;
-    } else {
-        return false;
+    const winConditions = [
+        ["Rock", "Scissors"],
+        ["Scissors", "Paper"],
+        ["Paper", "Rock"]
+    ];
+
+    for (let [player, computer] of winConditions) {
+        if (playerChoice === player && computerChoice === computer) {
+            return true;
+        }
     }
+    return false;
 }
 
 
