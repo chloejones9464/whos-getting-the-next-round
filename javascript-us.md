@@ -15,9 +15,9 @@
 [![Main Menu JS testing](https://img.youtube.com/vi/F9lon5cQj24/0.jpg)](https://youtube.com/shorts/F9lon5cQj24)
 
 ### Tablet testing
-[![Main Menu JS tablet testing](https://img.youtube.com/vi/F9lon5cQj24/0.jpg)](https://youtube.com/shorts/F9lon5cQj24)
+[![Main Menu JS tablet testing]()]()
 ### Desktop testing
-[![Main Menu JS desktop testing](https://img.youtube.com/vi/F9lon5cQj24/0.jpg)](https://youtube.com/shorts/F9lon5cQj24)
+[![Main Menu JS desktop testing]()]()
 ### Real device testing
 
 
