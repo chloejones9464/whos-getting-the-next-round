@@ -22,20 +22,9 @@
 
 ### User Stories
 
-#### HTML/CSS User Stories
-* As a player, I want a main menu that is has a clear structure so that I will be able to navigate the page with ease.
-* As a player, I would like to have instruction to the game so that I understand how the game works.
-* As a player, I would like to have the game page to be easy to look at so that I won't have trouble playing the game.
-* As a player, I want to have a choice of a number games to play so that I can pick one that's best for me.
-* As a player, I would like to see the end result of the game so that I can see if I've won I can CELEBRATE or if I've lost, I'll drown my sorrows.
-* As a player, I would like a close button on the main menu so that i can choose to close the game quickly and simply.
+Here you'll find the user stories for my project, I have both [HTML/CSS](html-css-us.md) and [JavaScript](javascript-us.md) user stories.
 
-#### JavaScript User Stories
-* As a player, I want each hand in the game to show react when I haver over them so that I know I have to click on then to play the game.
-
-Given that the player is on the game page, when the player haver's over the buttons, then the buttons(when hovered over) will change in size and return when the player leave the button
-
-
+Both links contain screenshots of the user stories in my GitHub project and will have corresponding screenshots/screen recordings of the completed tasks.
 
 ### Wireframes
 Please follow this link to the Wireframes.
@@ -43,6 +32,7 @@ Please follow this link to the Wireframes.
 Click [here](wireframes.md) and it'll take you straight there!
 ### Typography
 I used Google fonts' "Caveat Brush" for the one and only font for this game. It's a playful and fun font that fits well with a game that is casually played where-ever, whenever and in any decision making process!
+
 ### Colour Scheme
 
 #### ColorSpace and Eye Dropper
@@ -56,9 +46,7 @@ I then scrolled thorugh to find the best palette for my project. In this case it
 ![ColorSpace color palette](assets/documentation/colorspace-pallett-pick.webp)
 
 ## Features:
-Explain your features on the website,(navigation, pages, links, forms.....)
 ### Navigation
-### Footer
 ### Other features
 ## Technologies Used
 For my project I used; 
@@ -68,7 +56,9 @@ For my project I used;
 * I used Google fonts for a more playful font that'll pair well with my concept (laid-back pub vibe).
 * JavaScript
 ## Testing
-Important part of your README!!!
+
+Here we go! The most important part of this README and one that I have a love/hate relationship!
+
 ### Google's Lighthouse Performance
 Follow this [link](lighthouse.md) to view the Google Lighthouse Performance on mobiles and desktops!
 ### Browser Compatibility
@@ -79,7 +69,9 @@ Screenshots of the responsivness, pick few devices (from 320px top 1200px)
 This [link](validation.md) will take you to the screentshot of the validation checks I'd run for all my pages.
 There were a few minor errors that popped up but was mainly the duplicate of ids and the background image in the body tag.
 ### Manual Testing user stories or/and features
-Test all your user stories, you an create table 
+Please find the visual testing in the following links;
+[HTML/CSS](html-css-us.md) and [JavaScript](javascript-us.md)
+
 User Story |  Test | Pass
 --- | --- | :---:
 As a player, I want a main menu that is has a clear structure so that I will be able to navigate the page with ease. | The user will see the main page with good contrasting colors, easy navigation to play the game, choosing the number of turns they'd like to take and the rules that will pop out in a modal with clear, funny and informative detail of the game. 

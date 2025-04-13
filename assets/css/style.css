@@ -223,6 +223,7 @@ footer {
 
 #computerChoice {
     background-color: #006e5e;
+    border-radius: 10px;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -236,6 +237,7 @@ footer {
 
 #resultDisplay {
     background-color: #006e5e;
+    border-radius: 10px;
     width: 200px;
     height: 100px;
     position: absolute;

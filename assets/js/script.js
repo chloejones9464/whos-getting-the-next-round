@@ -43,7 +43,7 @@ function numOfGamesSlider() {
     localStorage.setItem("numberOfGames", rangeSlider.value);
 }
 
-//Getting the number of games selected and multiplying by 3 to get the score needed to win 
+//Getting the number of games selected get the score needed to win 
 function getNumberOfGames() {
     let selectedGames = localStorage.getItem("numberOfGames");
     // Check if wantedGames is null or not set, and assign a default value if necessary
