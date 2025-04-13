@@ -3,6 +3,7 @@
 
 ![Main menu HTML-CSS](/assets/documentation/main-menu-html-css.webp)
 
+
 ![Game page HTML-CSS](/assets/documentation/game-page-html-css.webp)
 
 ![Set win target HTML-CSS](/assets/documentation/set-win-html-css.webp)

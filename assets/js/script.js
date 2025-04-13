@@ -3,7 +3,9 @@ window.addEventListener('DOMContentLoaded', setup);
 let backgroundNoise = new Audio ("assets/sounds/crowded-pub.mp3");
 backgroundNoise.loop = true; // Loop the background noise
 
+
 let winnerNoise = new Audio ("assets/sounds/winner-noise.mp3");
+winnerNoise.loop = true; // Loop the winner noise
 let loserNoise = new Audio ("assets/sounds/loser-noise.mp3");
 let drawNoise = new Audio ("assets/sounds/draw-noise.mp3");
 
@@ -69,7 +71,6 @@ function playGame() {
 
     document.getElementById("topDiv").innerHTML = /*html*/ `
     <div id="navbar">       
-        <h3 id="gamePageHeading">Who's getting the next round?</h3> 
         <span><button id="mainMenuBtn" class="gamePageNavBtns">Main menu</button></span> <br>
         <span data-bs-toggle="modal" data-bs-target="#rulesModal" id="rulesGamePage" ><button class="gamePageNavBtns">Rules</button></span>
     </div>    
@@ -325,6 +326,7 @@ let originalContent = document.getElementById("mainMenu").innerHTML;
 function mainMenu() {
     document.getElementById("mainMenu").innerHTML = originalContent;
     setup();
+    backgroundNoise.pause();
     // Stop noise from winner/loser/draw pages
     winnerNoise.pause();
     loserNoise.pause();

@@ -155,10 +155,6 @@ footer {
     margin-right: 10px;
 }
 
-#gamePageHeading {
-    display: none;
-}
-
 .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -391,16 +387,6 @@ footer {
     #numberOfGames {
         width: 50%
     }
-}
-
-@media screen and (min-width: 768px) {
-    #gamePageHeading {
-        display: block;
-        position: absolute;
-        left: 10px;
-        padding-right: 156px;
-        margin-top: 7px;
-    }    
 }
 
 @media screen and (min-width: 992px) {
