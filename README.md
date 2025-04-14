@@ -1,3 +1,12 @@
+# Who's Getting The Next Round?
+![Am i responsive hero image](/assets/documentation/am-i-responsive.webp)
+Ever needed to make a decision on who's getting the next round of drink in from the bar?
+Look no further! Here is a fun, quirky game for you to enjoy while at the pub, at home or...anywhere really!
+
+I've created a game that can be played by anyone of all ages. Even if you havent got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
+
+Growing up I've always enjoyed this game whether its making decisions or curing a period of boredom, it was a big part of my childhood.
+
 ## Table Of Contents:
 1. [Design & Planning](#design-&-planning)
     * [User Stories](#user-stories)
@@ -74,8 +83,7 @@ Please find the visual testing in the following links;
 
 User Story |  Test | Pass
 --- | --- | :---:
-As a player, I want a main menu that is has a clear structure so that I will be able to navigate the page with ease. | The user will see the main page with good contrasting colors, easy navigation to play the game, choosing the number of turns they'd like to take and the rules that will pop out in a modal with clear, funny and informative detail of the game. 
-The user is able to click on the play game button to display the game page, click on the number of turns button to adjust how many games they'd like to play, click the rules button to display the rules modal and enter their name in the input above the buttons| &check;
+As a player, I want a main menu that is has a clear structure so that I will be able to navigate the page with ease. | The user will see the main page with good contrasting colors, easy navigation to play the game, choosing the number of turns they'd like to take and the rules that will pop out in a modal with clear, funny and informative detail of the game. The user is able to click on the play game button to display the game page, click on the number of turns button to adjust how many games they'd like to play, click the rules button to display the rules modal and enter their name in the input above the buttons| &check;
 --- | --- | :---:
 As a player, I want to have a choice of a number games to play so that I can pick one that's best for me. | There is a clear button on the home page for the user to choose the 'best of' number of turns until they win. This is in place to give the user the element of control and for them to decide what works for them. They will be able to change the number of turn before the game end with the winner reaching the number chosen by the user. | &check;
 --- | --- | :---:
@@ -83,8 +91,25 @@ As a player, I would like to have instruction to the game so that I understand h
 --- | --- | :---:
 As a player, I would like to have the game page to be easy to look at so that I won't have trouble playing the game. | From the main menu, once clicking on the play game button, it will take you to the game page. This is displayed by changing the content of the divs on the main page, making the page's loading time a lot quicker! The player is able to start the game immediately. Once the player clickes on their choice the computer's choice will display the same time, giving an instant result. There is a scoreboard above the game area, displaying all scores from the player, computer and the draw score. The main menu and rules button is place at the to right if the screen and is visable on small and larger devices throughout the time on that page.| &check;
 --- | --- | :---:
-As a player, I would like to see the end result of the game so that I can see if I've won I can CELEBRATE or if I've lost, I'll drown my sorrows. | what is visible to the user and what action they should perform | &check;
-- and attach screenshot
+As a player, I would like to see the end result of the game so that I can see if I've won I can CELEBRATE or if I've lost, I'll drown my sorrows. | When the game is won/lost/draw, the screen will change to the display of the result of the game. There will be a winner, loser and a draw page containing a quirky and funny paragraph, the option to play again or to retun to the main menu. The user will feel like they have completed the game and have the control to leave or play another game. | &check;
+--- | --- | :---:
+As a player, I want to see my name in the game, so that the game is more personal to me. | On the main menu of the page, the player can enter their name(no more than 15 characters). The player's name will then appear in the paragraph on the winner/loser/draw page. | &check;
+--- | --- | :---:
+As a player, I want a main menu button on the screen(on the game page), so that I can return to the main menu whenever I'd like. | The game page will contain a navbar that will hold the main menu and rules button. The main menu button, once pressed, will clear the HTML of the game page and revert back to the original content. This will ensure seamless transition and cleaner code. | &check;
+--- | --- | :---:
+As a player, I want a button for the rules, so that I can be reminded of the rules at the beginning, or mid game or whenever needed. | The rules button will sit at the top of the screen like the main menu button. The rules button, same as the main menu page, will display a modal over the game page. Players can expect to open the rules modal and exit by the close or X button or simply clicking outside the modal itself. | &check;
+--- | --- | :---:
+As a player, I want to see the score of the game, so that I can see if I'm winning/losing or the game comes down to a draw. | The scoreboard will contain the player's, computer's and the draw score. Each will have a function that will be called to increment the score if the game logic is met for each one. The player will see their score increase by 1 if they win, computer increase by 1 if they lose and the draw score will increase by 1 if both chose the same hand. | &check;
+--- | --- | :---:
+As a player, I want see what the computer chose, so that I can see what we've both chosen. | The player can expect to see an area on the screen where the computer's choice will be displayed. This will give a visual of the computer's choice for the player. | &check;
+--- | --- | :---:
+As a player, I want to have a visual results display, so that I can read if I've won, lost or drew in the round. | The results display will contain a small line to tell the player who's won if if the game was a draw. The player can read the display clearly and instantly as soon as they click on the hand.| &check;
+--- | --- | :---:
+As a player, I want a player section, so that I know where I need to click the hands and play the game. | The player can expect to find their hands for the game to be at the bottom of the play area. They can click on the hands for instant results of the game. If the player is playing on a desktop, they can expect to see the cursor and hand change as they hover over them. | &check; - [link to hands response vid]
+--- | --- | :---:
+As a player, I want an end of game page, so that I can see if I've won, lost or drew in the game. | The player can expect to see a page appear after each "set win target" is met. They will have a personalised message for if they win/lose/draw, thanks to the input on the main page. This will give the player a sense that the game has ended but will have the option to play again or retun to the main menu. | &check;
+--- | --- | :---:
+As a player, I want fun sounds played in the background, so that I get the feel of being in a pub. | The sounds in the game are a crowded pub, applause, loser noise and draw noise. The main sound of the game will be the crowded pub noise as it plays throughout the game. When the player wins they will receive a round of applause, if they lose they will receive an "awww" noise and if they draw they will receive an "ahh interesting" nosie. | &check;
 
 
 ## Bugs
@@ -180,16 +205,31 @@ It's safe to say I deserved my Gin and takeaway that night!
 
 ## Deployment
 
-#### Creating Repository on GitHub
-- First make sure you are signed into [Github](https://github.com/) and go to the code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
-- Then click on **use this template** and select **Create a new repository** from the drop-down. Enter the name for the repository and click **Create repository from template**.
-- Once the repository was created, I clicked the green **gitpod** button to create a workspace in gitpod so that I could write the code for the site.
 #### Deloying on Github
 The site was deployed to Github Pages using the following method:
 - Go to the Github repository.
 - Navigate to the 'settings' tab.
 - Using the 'select branch' dropdown menu, choose 'main'.
 - Click 'save'.
+
+#### Cloning
+To clone a repository from GitHub, you can use the command git clone in the terminal or use the Clone Repository button in a tool like Visual Studio Code or GitHub Desktop. 
+
+#### Steps 
+1. Go to the repository's main page on GitHub
+2. Click Code above the list of files
+3. Copy the repository's URL
+4. Open the terminal
+5. Change the current working directory to where you want the cloned directory to be
+6. Run the command git clone <repository-url>
+
+#### How to fork the repository
+To fork a repository on GitHub, navigate to the desired repository on GitHub, then locate the "Fork" button in the top right corner of the page and click it; this will create a copy of the repository under your own GitHub account, allowing you to make changes independently from the original project. 
+
+#### Key steps:
+1. Go to the repository: Access the GitHub repository you want to fork. 
+2. Click "Fork": In the top right corner of the repository page, find and click the "Fork" button. 
+3. Confirm ownership: If prompted, select the owner (which should be your GitHub account) for the forked repository.
 
 ## Credits
 List of used resources for your website (text, images, snippets of code, projects....)
