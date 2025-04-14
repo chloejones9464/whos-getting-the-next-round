@@ -3,7 +3,9 @@
 Ever needed to make a decision on who's getting the next round of drink in from the bar?
 Look no further! Here is a fun, quirky game for you to enjoy while at the pub, at home or...anywhere really!
 
-I've created a game that can be played by anyone of all ages. Even if you havent got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
+I've created a game that can be played by anyone of all ages. 
+You can expect a funny paragraph at the end of each round if you've won, lost or had a draw with your mate!
+Even if you havent got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
 
 Growing up I've always enjoyed this game whether its making decisions or curing a period of boredom, it was a big part of my childhood.
 
@@ -17,8 +19,6 @@ Growing up I've always enjoyed this game whether its making decisions or curing 
     
 2. [Features](#features)
     * [Navigation](#Navigation)
-    * [Footer](#Footer)
-    * [Home page](#Home-page)
     * [Other features](#Other-features)
 
 3. [Technologies Used](#technologies-used)
@@ -56,6 +56,22 @@ I then scrolled thorugh to find the best palette for my project. In this case it
 
 ## Features:
 ### Navigation
+The navigation within this game is very simple and straight-forward. 
+
+The home page has an input field followed by 3 buttons.
+Play game button takes you straight into the game page.
+Set a win target button is there for the player to chose if they would like to make the get as long or short as they'd like.
+The rules button pops a modal out of the screen over the page for the player to refresh their knowledge of the classic game.
+
+The game page has a total of 5 buttons.
+The main menu button takes you back to the home page.
+The rules button, like the main menu rules button, will pop out a modal for the player to read.
+The 3 hands at the bottom of the play area are buttons for the player to press to play the game.
+
+The winner/loser/draw pages contain 2 buttons that will ask the player to chose to play again or to return to the main menu.
+The play again button will take the player back to the page with the same set wins target as they chose on the home page.
+The main menu button take the player to the home page and will clear the set win target and give the player to chose another if they'd like to up or lower it.
+
 ### Other features
 ## Technologies Used
 For my project I used; 
@@ -232,24 +248,25 @@ To fork a repository on GitHub, navigate to the desired repository on GitHub, th
 3. Confirm ownership: If prompted, select the owner (which should be your GitHub account) for the forked repository.
 
 ## Credits
-List of used resources for your website (text, images, snippets of code, projects....)
-I used ChatGPT and Microsoft Copilot to help create unique imaged for my project's background.
-GitHub Docs
-W3Schools
-Bootstrap
-Google
-Flaticon - Rock, Paper, Scissor hands
-ColorSpace
-Pixelied - PNG - WEBP
-Google Fonts
-Favicon
-Geekforgeeks - Helped me with my range slider development.
-Pixabay.com - I had the sound effects from this website for my game.
-dhwise.com - Helped hugely with my 404 error page set up!!
+* I used ChatGPT and Microsoft Copilot to help create unique imaged for my project's background. I also used these for help with parts of my coding. Asking for them to explain certain parts of my code and why they work and do what they do.
+* GitHub Docs
+* W3Schools - I used this site quite a lot to check my knowledge and for help with sound effects. This really simplified my issues and helped me understand certain things a little more such as loops.
+* Bootstrap - I used Bootstrap to help design buttons and structure my application.
+* Google - The GOAT of all search engines, in my opinion. There in a flash and helped solve small issues.
+* Flaticon - Rock, Paper, Scissor hands
+* ColorSpace - I used this website to help pick the color palette for my project. It made a palette that fitted the background and compliments the application nicely.
+* Pixelied - This helped convert PNG - WEBP
+* Google Fonts - I used Google fonts a for a fun font to match the concept of the game itself.
+* Favicon - I created an image using ChatGPT and then made the image into a Favicon for my project.
+* Geekforgeeks - Helped me with my range slider development.
+* Pixabay.com - I had the sound effects from this website for my game.
+* dhwise.com - Helped hugely with my 404 error page set up!!
 
   - Code & Text Content
   
   - Media
+    - Youtube - I used Youtube to help display my videos(screen recordings) in my README. When I used screen recordings for my previous project it had a very good review as you could see the responsiveness and testing "live in action". I was excited to use this feature again for this project.
   
   - Acknowledgment
-    - acknowledgment to mentors, peers, tutors, friends, family, facilitator (who ever contributed and helped with the project)
+    - A HUGE thanks to my family for being their patient selves while I spent hours each evening perfecting certain elements of this game. They've been my rocks and the reason for me to continue this coding journey!
+    - Another HUGE thanks to my mentor Matt for being there for a quick chat/video call in my hour of need and dark parts of this project. I had hit a hard concrete wall with this project when it came to writing the JavaScript. I have the tendency to overthink and think about more than one problem at a time, which eventually spiraled into a small breakdown. I reached out to Matt and he was happy to talk through the issues and lack of understanding. Thank god for it as I can safely say I'm a lot more confident with my work and knowledge of JavaScript now(There is still a long way to go but I'm looking forward to learning and achieveing more in the future.)
