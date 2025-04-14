@@ -128,7 +128,7 @@ footer {
     color: var(--main-bg-color);
 }
 
-.btn:hover:hover {
+.close:hover:hover {
     margin-bottom: 4px !important;
 }
 
