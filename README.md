@@ -62,7 +62,7 @@ Here we go! The most important part of this README and one that I have a love/ha
 ### Google's Lighthouse Performance
 Follow this [link](lighthouse.md) to view the Google Lighthouse Performance on mobiles and desktops!
 ### Browser Compatibility
-Check compatability with different browsers
+
 ### Responsiveness
 Screenshots of the responsivness, pick few devices (from 320px top 1200px)
 ### Code Validation
@@ -85,7 +85,6 @@ As a player, I would like to have the game page to be easy to look at so that I 
 --- | --- | :---:
 As a player, I would like to see the end result of the game so that I can see if I've won I can CELEBRATE or if I've lost, I'll drown my sorrows. | what is visible to the user and what action they should perform | &check;
 - and attach screenshot
-
 
 
 ## Bugs

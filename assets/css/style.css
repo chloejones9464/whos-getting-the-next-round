@@ -121,12 +121,15 @@ footer {
     border: 2px solid var(--highlight-color);
 }
 
-.close,
-#save {
+.close {
     background-color: var(--highlight-color);
     border-bottom: 2px solid var(--main-bg-color);
     border-right: 2px solid var(--main-bg-color);
     color: var(--main-bg-color);
+}
+
+.btn:hover:hover {
+    margin-bottom: 4px !important;
 }
 
 /*Styling for the game page*/
