@@ -1,5 +1,6 @@
 # Who's Getting The Next Round?
 ![Am i responsive hero image](/assets/documentation/am-i-responsive.webp)
+
 Ever needed to make a decision on who's getting the next round of drink in from the bar?
 Look no further! Here is a fun, quirky game for you to enjoy while at the pub, at home or...anywhere really!
 

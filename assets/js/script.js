@@ -1,21 +1,20 @@
 window.addEventListener('DOMContentLoaded', setup);
 
-let backgroundNoise = new Audio ("assets/sounds/crowded-pub.mp3");
+let backgroundNoise = new Audio("assets/sounds/crowded-pub.mp3");
 backgroundNoise.loop = true; // Loop the background noise
+let winnerNoise = new Audio("assets/sounds/winner-noise.mp3");
+let loserNoise = new Audio("assets/sounds/loser-noise.mp3");
+let drawNoise = new Audio("assets/sounds/draw-noise.mp3");
 
 
-let winnerNoise = new Audio ("assets/sounds/winner-noise.mp3");
-winnerNoise.loop = true; // Loop the winner noise
-let loserNoise = new Audio ("assets/sounds/loser-noise.mp3");
-let drawNoise = new Audio ("assets/sounds/draw-noise.mp3");
 
 function setup() {
+    // Adding event listeners to the buttons
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);
 }
 
 function playerName() {
-    localStorage.clear(); // Clear local storage when going back to main menu
     // Getting the player name from the input field and storing it in local storage
     let playerNameInput = document.getElementById("playerName");
 
@@ -58,21 +57,22 @@ function getNumberOfGames() {
 }
 
 // Changes divs to display the game content
-function playGame() { 
+function playGame() {
     // Stop noise from winner/loser/draw pages
     winnerNoise.pause();
     loserNoise.pause();
     drawNoise.pause();
 
-    // Play background noise when the game starts    
-    backgroundNoise.play();
-    backgroundNoise.loop = true; // Loop the background noise
     document.getElementById("playGame").removeEventListener("click", playGame);
 
     document.getElementById("topDiv").innerHTML = /*html*/ `
-    <div id="navbar">       
-        <span><button id="mainMenuBtn" class="gamePageNavBtns">Main menu</button></span> <br>
-        <span data-bs-toggle="modal" data-bs-target="#rulesModal" id="rulesGamePage" ><button class="gamePageNavBtns">Rules</button></span>
+    <div id="navbar">               
+        <span data-bs-toggle="modal" data-bs-target="#rulesModal" id="rulesGamePage" >
+        <button class="gamePageNavBtns">Rules</button>
+        </span>
+        <span>
+        <button id="mainMenuBtn" class="gamePageNavBtns quit">Quit</button>
+        </span>
     </div>    
     
     <div id="scoreBoard">
@@ -326,14 +326,12 @@ let originalContent = document.getElementById("mainMenu").innerHTML;
 function mainMenu() {
     document.getElementById("mainMenu").innerHTML = originalContent;
     setup();
-    backgroundNoise.pause();
     // Stop noise from winner/loser/draw pages
     winnerNoise.pause();
     loserNoise.pause();
     drawNoise.pause();
-    // Clear local storage when going back to main menu
-    localStorage.clear(); 
     playerName(); // Call the function to set up player name input
+    playSoundToggle();
 }
 
 // throw an error 404 if the page is not found
@@ -356,7 +354,7 @@ function pageNotFound() {
 
         </div>
     </div>`;
-    
-// Add event listener to the main menu button on the error page
+
+    // Add event listener to the main menu button on the error page
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
-} 
+}

@@ -138,9 +138,8 @@ footer {
 .gamePageNavBtns {
     background-color: var(--highlight-color);
     color: var(--main-bg-color);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-radius: 5px;
-
 }
 
 #gamePage,
@@ -150,12 +149,10 @@ footer {
 }
 
 #navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-grid-column-align: end;
-    justify-self: end;
-    margin-right: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box {
@@ -404,5 +401,21 @@ footer {
     input {
         padding: 4px 8px;
     }
+
+@media screen and (max-width: 1920px) and (min-width: 1200px) {
+    #enterName h3 {
+        margin-top: 70px;
+        font-size: 3.5rem;
+    }
+    input {
+        font-size: 1.8rem;
+    }
+    #playGame,
+    #numberOfGames,
+    #rules {
+        font-size: 2rem;
+    }
+    
+}
 
 }
