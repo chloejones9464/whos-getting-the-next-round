@@ -1,15 +1,46 @@
 window.addEventListener('DOMContentLoaded', setup);
-
+let isMuted = true; // Mute sounds
 let backgroundNoise = new Audio("assets/sounds/crowded-pub.mp3");
 backgroundNoise.loop = true; // Loop the background noise
 let winnerNoise = new Audio("assets/sounds/winner-noise.mp3");
 let loserNoise = new Audio("assets/sounds/loser-noise.mp3");
 let drawNoise = new Audio("assets/sounds/draw-noise.mp3");
 
+function playPause() {
+
+    isMuted = !isMuted;
+
+    if (isMuted) {
+        backgroundNoise.pause();
+        backgroundNoise.currentTime = 0;
+    } else {
+        backgroundNoise.play();
+    }
+
+}
+function playWinnerSound() {
+    if (!isMuted) winnerNoise.play();
+}
+
+function playLoserSound() {
+    if (!isMuted) loserNoise.play();
+}
+
+function drawSound() {
+    if (!isMuted) drawNoise.play();
+}
+
+function backgroundSound() {
+    if (!isMuted) backgroundNoise.play();
+}
+
+//Background noise
+backgroundSound();
 
 
 function setup() {
-    // Adding event listeners to the buttons
+    // Adding event listeners to the buttons    
+    document.getElementById("playSound").addEventListener("click", playPause);
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);
     document.getElementById("reset").addEventListener("click", resetSettings);
@@ -216,8 +247,7 @@ function draw() {
 function playerWinPage() {
     // Stop the background noise when the game ends
     backgroundNoise.pause();
-    winnerNoise.play(); // Play the winner noise
-    // Getting the player name from local storage or using a default name
+    playWinnerSound();
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
     // Displaying the result page for the player win
@@ -253,7 +283,7 @@ function playerWinPage() {
 function computerWinPage() {
     // Stop the background noise when the game ends
     backgroundNoise.pause();
-    loserNoise.play(); // Play the loser noise    
+    playLoserSound();
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
@@ -287,7 +317,7 @@ function computerWinPage() {
 function drawPage() {
     // Stop the background noise when the game ends
     backgroundNoise.pause();
-    drawNoise.play(); // Play the draw noise
+    drawSound();
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
@@ -334,10 +364,6 @@ let originalContent = document.getElementById("mainMenu").innerHTML;
 function mainMenu() {
     document.getElementById("mainMenu").innerHTML = originalContent;
     setup();
-    // Stop noise from winner/loser/draw pages
-    winnerNoise.pause();
-    loserNoise.pause();
-    drawNoise.pause();
     playerName(); // Call the function to set up player name input
 }
 
