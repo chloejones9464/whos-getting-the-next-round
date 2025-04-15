@@ -12,6 +12,14 @@ function setup() {
     // Adding event listeners to the buttons
     document.getElementById("playGame").addEventListener("click", playGame);
     document.getElementById("numberOfGames").addEventListener("click", numOfGamesSlider);
+    document.getElementById("reset").addEventListener("click", resetSettings);
+}
+
+function resetSettings() {
+    localStorage.clear();
+    // Reset input fields and sliders
+    document.getElementById("playerName").value = ""; // Replace with the actual ID of the name input
+    document.getElementById("numOfGamesRange").value = winningScore; // Replace with the actual ID and default value
 }
 
 function playerName() {
@@ -331,7 +339,6 @@ function mainMenu() {
     loserNoise.pause();
     drawNoise.pause();
     playerName(); // Call the function to set up player name input
-    playSoundToggle();
 }
 
 // throw an error 404 if the page is not found

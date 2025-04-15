@@ -104,6 +104,8 @@ footer {
     border-right: 2px solid var(--main-bg-color);
     font-size: 1.5rem;
 }
+#reset {font-size: 2rem;
+}
 
 /*Styling the modals*/
 
@@ -380,7 +382,7 @@ footer {
 @media screen and (min-width: 353px) {
 
     #playGame,
-    #rules, .mainMenu {
+    #rules, .mainMenu, #reset {
         width: 50%;
     }
 
@@ -394,7 +396,8 @@ footer {
     #playGame,
     #rules,
     #numberOfGames,
-    .mainMenu {
+    .mainMenu, 
+    #reset {
         width: 30%;
     }
 
@@ -414,6 +417,40 @@ footer {
     #numberOfGames,
     #rules {
         font-size: 2rem;
+    }
+    .gamePageNavBtns {
+        font-size: 1.7rem;
+    }
+    #scoreBoard {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+    #scoreBoard span {
+        font-size: 2rem;
+    }
+    #computerSection h3 {
+        font-size: 4rem;
+    }
+    #computerChoice {
+        margin-top: 112px;
+        width: 202px;
+        height: 144px;
+    }
+    #computerChoice img {
+        width: 82px;
+    }
+    #resultDisplay {
+        width: 411px;
+        height: 142px;
+        margin-top: 271px;
+        font-size: 3rem;
+    }
+    #playerSection {
+        margin-top: 341px;
+    }
+    #playerSection img {
+        width: 78%;
+        margin-right: 30px;
     }
     
 }
