@@ -136,8 +136,16 @@ footer {
 }
 
 /*Styling FontAwesome icon*/
-#playSound i {
-    font-size: 1.5rem;
+#playSound {
+    width: 104px;
+    height: 34px;
+    background-color: var(--main-bg-color);
+}
+
+#playSound p {
+    color: white;
+    text-align: center;
+    padding-top: 3px;
 }
 
 /*Styling for the game page*/

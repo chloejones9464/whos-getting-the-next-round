@@ -6,6 +6,8 @@ let winnerNoise = new Audio("assets/sounds/winner-noise.mp3");
 let loserNoise = new Audio("assets/sounds/loser-noise.mp3");
 let drawNoise = new Audio("assets/sounds/draw-noise.mp3");
 
+console.log(document.getElementById("playSound"));
+
 function playPause() {
 
     isMuted = !isMuted;
@@ -13,10 +15,10 @@ function playPause() {
     if (isMuted) {
         backgroundNoise.pause();
         backgroundNoise.currentTime = 0;
-        document.getElementById("playSound").innerHTML = /*html*/ `<i class="fa-solid fa-volume-xmark"></i>`;
+        document.getElementById("playSound").innerHTML = /*html*/ `<p>Sound effects on</p>`;
     } else {
         backgroundNoise.play();
-        document.getElementById("playSound").innerHTML = /*html*/ `<i class="fa-solid fa-volume-high"></i>`;
+        document.getElementById("playSound").innerHTML = /*html*/ `<p>Sound effects off</p>`;
     }
 }
 function playWinnerSound() {
