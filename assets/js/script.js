@@ -13,10 +13,11 @@ function playPause() {
     if (isMuted) {
         backgroundNoise.pause();
         backgroundNoise.currentTime = 0;
+        document.getElementById("playSound").innerHTML = /*html*/ `<i class="fa-solid fa-volume-xmark"></i>`;
     } else {
         backgroundNoise.play();
+        document.getElementById("playSound").innerHTML = /*html*/ `<i class="fa-solid fa-volume-high"></i>`;
     }
-
 }
 function playWinnerSound() {
     if (!isMuted) winnerNoise.play();
@@ -364,6 +365,12 @@ let originalContent = document.getElementById("mainMenu").innerHTML;
 function mainMenu() {
     document.getElementById("mainMenu").innerHTML = originalContent;
     setup();
+    winnerNoise.pause();
+    winnerNoise.currentTime = 0;
+    loserNoise.pause();
+    loserNoise.currentTime = 0;
+    drawNoise.pause();
+    draw.currentTime = 0;
     playerName(); // Call the function to set up player name input
 }
 
