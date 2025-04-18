@@ -136,7 +136,7 @@
 <summary>Mobile(320px)</summary>
 
 ### Mobile (320px)
-![Rules mobile]vid
+[![Rules mobile](https://img.youtube.com/vi/mfqjQOoYYxw/0.jpg)](https://youtube.com/shorts/mfqjQOoYYxw)
 </details>
 
 <details>
@@ -177,11 +177,11 @@
 
 ### Mobile (320px)
 #### Winner
-![Mobile winner page]
+[![Winner mobile](https://img.youtube.com/vi/btaq2IxRoW0/0.jpg)](https://youtube.com/shorts/btaq2IxRoW0)
 #### Loser
-![Mobile loser page]
+[![Loser mobile](https://img.youtube.com/vi/d4S2mdcvaQM/0.jpg)](https://youtube.com/shorts/d4S2mdcvaQM)
 #### Draw
-![Mobile draw page](assets/documentation/mobile-draw-320px.webp)
+![Draw page mobile](assets/documentation/mobile-draw-320px.webp)
 </details>
 
 <details>
@@ -190,11 +190,11 @@
 ### Tablet
 
 #### Winner
-![Tablet winner page]
+[![Winner Tablet](https://img.youtube.com/vi/CzugEZMkLj8/0.jpg)](https://youtu.be/CzugEZMkLj8)
 #### Loser
-![Tablet loser page]
+[![Loser Tablet](https://img.youtube.com/vi/JofZjMik5bE/0.jpg)](https://youtu.be/JofZjMik5bE)
 #### Draw
-![Tablet draw page](assets/documentation/tablet-draw.webp)
+![Draw page Tablet](assets/documentation/tablet-draw.webp)
 </details>
 
 <details>
@@ -203,11 +203,11 @@
 ### Laptop
 
 #### Winner
-![Laptop winner page]
+[![Winner Laptop](https://img.youtube.com/vi/nzkiYIlLpcc/0.jpg)](https://youtu.be/nzkiYIlLpcc)
 #### Loser
-![Laptop loser page](assets/documentation/laptop-loser.webp)
+![Loser page Laptop](assets/documentation/laptop-loser.webp)
 #### Draw
-![Laptop draw page](assets/documentation/laptop-draw.webp)
+![Draw page Laptop](assets/documentation/laptop-draw.webp)
 </details>
 
 <details>
@@ -215,11 +215,11 @@
 
 ### 1080p Screen
 #### Winner
-![1080p winner page](assets/documentation/1080p-winner.webp)
+![Winner page 1080p Screen](assets/documentation/1080p-winner.webp)
 #### Loser
-![1080p loser page](assets/documentation/1080p-loser-page.webp)
+![Loser page 1080p Screen](assets/documentation/1080p-loser-page.webp)
 #### Draw
-![1080p draw page](assets/documentation/1080p-draw.webp)
+![Draw page 1080p Screen](assets/documentation/1080p-draw.webp)
 </details>
 </details>
 <br>
