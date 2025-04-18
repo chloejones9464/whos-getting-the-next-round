@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', setup);
+
+//Sound variables
 let isMuted = true; // Mute sounds
 let backgroundNoise = new Audio("assets/sounds/crowded-pub.mp3");
 backgroundNoise.loop = true; // Loop the background noise
@@ -8,6 +10,7 @@ let drawNoise = new Audio("assets/sounds/draw-noise.mp3");
 
 console.log(document.getElementById("playSound"));
 
+//Function to toggle the noises in the game
 function playPause() {
 
     isMuted = !isMuted;
@@ -15,6 +18,12 @@ function playPause() {
     if (isMuted) {
         backgroundNoise.pause();
         backgroundNoise.currentTime = 0;
+        winnerNoise.pause();
+        winnerNoise.currentTime = 0;
+        loserNoise.pause();
+        loserNoise.currentTime = 0;
+        drawNoise.pause();
+        drawNoise.currentTime = 0;
         document.getElementById("playSound").innerHTML = /*html*/ `<p>Sound effects on</p>`;
     } else {
         backgroundNoise.play();
@@ -400,3 +409,4 @@ function pageNotFound() {
     // Add event listener to the main menu button on the error page
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 }
+

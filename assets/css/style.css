@@ -146,6 +146,7 @@ footer {
     color: white;
     text-align: center;
     padding-top: 3px;
+    font-size: 1em;
 }
 
 /*Styling for the game page*/
@@ -422,7 +423,9 @@ footer {
         font-size: 2rem;
     }
 
-@media screen and (max-width: 1920px) and (min-width: 1200px) {
+@media screen and (min-width: 1920px) {
+
+    /*Styling for the main menu page*/
     #enterName h3 {
         margin-top: 70px;
         font-size: 3.5rem;
@@ -435,6 +438,8 @@ footer {
     #rules, #resetBtn {
         font-size: 2rem;
     }
+
+    /*Styling for the game page*/
     .gamePageNavBtns {
         font-size: 1.7rem;
     }
@@ -464,12 +469,40 @@ footer {
     }
     #playerSection {
         margin-top: 341px;
+        margin-left: 72px;
     }
     #playerSection img {
         width: 78%;
         margin-right: 30px;
     }
     
+    /*Styling the winner/loser/draw page*/
+    #resultPageHeading {
+        margin-top: 117px;
+        font-size: 2rem;
+    }
+
+    #resultPara {
+        margin-top: 56px;
+        font-size: 2.3rem;
+    }
+
+    #playGame {
+        margin-top: 42px;
+    }
+
+    #mainMenuBtn {
+        margin-top: 40px;
+        font-size: 2rem;
+    }
+
+    #playSound {
+        margin-top: 60px;
+    }
+
+    .resultPageHeading > h1 {
+        font-size: 3.5rem;
+    }
 }
 
 }
