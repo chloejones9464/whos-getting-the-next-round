@@ -1,5 +1,3 @@
-window.addEventListener('DOMContentLoaded', setup);
-
 //Sound variables
 let isMuted = true; // Mute sounds
 let backgroundNoise = new Audio("assets/sounds/crowded-pub.mp3");
@@ -257,8 +255,6 @@ function draw() {
 }
 
 function playerWinPage() {
-    // Stop the background noise when the game ends
-    backgroundNoise.pause();
     playWinnerSound();
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
@@ -293,8 +289,6 @@ function playerWinPage() {
 }
 
 function computerWinPage() {
-    // Stop the background noise when the game ends
-    backgroundNoise.pause();
     playLoserSound();
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
@@ -327,8 +321,6 @@ function computerWinPage() {
 }
 
 function drawPage() {
-    // Stop the background noise when the game ends
-    backgroundNoise.pause();
     drawSound();
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
@@ -410,3 +402,4 @@ function pageNotFound() {
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 }
 
+// window.addEventListener('DOMContentLoaded', setup);

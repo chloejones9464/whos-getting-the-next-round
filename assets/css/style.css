@@ -140,6 +140,7 @@ footer {
     width: 104px;
     height: 34px;
     background-color: var(--main-bg-color);
+    cursor: pointer;
 }
 
 #playSound p {

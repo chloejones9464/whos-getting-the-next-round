@@ -1,11 +1,13 @@
 {
   "dependencies": {
+    "jest-fixed-jsdom": "^0.0.9",
     "next": "^15.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "name": "whos-getting-the-next-round",
   "version": "1.0.0",
