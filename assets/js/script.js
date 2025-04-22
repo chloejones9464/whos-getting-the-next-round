@@ -6,7 +6,6 @@ let winnerNoise = new Audio("assets/sounds/winner-noise.mp3");
 let loserNoise = new Audio("assets/sounds/loser-noise.mp3");
 let drawNoise = new Audio("assets/sounds/draw-noise.mp3");
 
-console.log(document.getElementById("playSound"));
 
 //Function to toggle the noises in the game
 function playPause() {
@@ -402,4 +401,4 @@ function pageNotFound() {
     document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 }
 
-// window.addEventListener('DOMContentLoaded', setup);
+window.addEventListener('DOMContentLoaded', setup);
