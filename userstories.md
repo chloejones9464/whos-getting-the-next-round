@@ -1,14 +1,16 @@
 
-# HTML/CSS User Stories
+# User Stories
 
 ## Main Menu
-<details>
-<summary>Main Menu</summary>
 
 <details>
 <summary>Main Menu GitHub User Story</summary>
+<br>
+The link below will take you to the issue created for the main menu.
+<br>
 
-![Main menu HTML-CSS](/assets/documentation/main-menu-html-css.webp)
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/1
+
 </details>
 
 <details> 
@@ -39,16 +41,16 @@
 ![1080p Screen](assets/documentation/1080px-menu.webp)
 </details>
 
-</details>
 
 ## Game Page
-<details>
-<summary>Game Page</summary>
 
 <details>
 <summary>Game page GitHub User Story</summary>
+<br>
+The link below will take you to the issue created for the game page.
 
-![Game page HTML-CSS](/assets/documentation/game-page-html-css.webp)
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/5
+
 </details>
 
 <details>
@@ -79,17 +81,16 @@
 ![1080p Screen](assets/documentation/1080p-game-page.webp)
 </details>
 
-</details>
 
 ## Set win target
 
 <details>
-<summary>Set a win target</summary>
-
-<details>
 <summary>Set a win target GitHub User Story</summary>
+<br>
+The link below will take you to the issue created for the Set a win target modal. 
 
-![Set win target HTML-CSS](/assets/documentation/set-win-html-css.webp)
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/2
+
 </details>
 
 <details>
@@ -119,17 +120,16 @@
 ### 1080p Screen
 ![1080p Screen](assets/documentation/1080p-set-win.webp)
 </details>
-</details>
 
 ## Rules
 
 <details>
-<summary>Rules</summary>
-
-<details>
 <summary>Rules GitHub User Story</summary>
+<br>
+The link below will take you to the issue created for the Rules modal. 
 
-![Rules HTML-CSS](/assets/documentation/rules-html-css.webp)
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/3
+
 </details>
 
 <details>
@@ -159,17 +159,17 @@
 ### 1080p screen
 ![1080p Screen](assets/documentation/1080p-rules.webp)
 </details>
-</details>
 
 ## Winner/Loser/Draw pages
 
 <details>
-<summary>Winner/Loser/Draw pages</summary>
-
-<details>
 <summary>Winner/Loser/Draw pages GitHub User Story</summary>
+<br>
+The link below will take you to the issue created for the Winner/loser/draw pages. 
 
-![Winner/loser/draw page HTML-CSS](/assets/documentation/winner-loser-draw-html-css.webp)
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/6
+
 </details>
 
 <details>
@@ -221,7 +221,55 @@
 #### Draw
 ![Draw page 1080p Screen](assets/documentation/1080p-draw.webp)
 </details>
-</details>
+
+## Player name input
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/11
+
+## Play game button
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/12
+
+## Set a win target
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/13
+
+## Rules button HTML
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/14
+
+## Rules JS
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/16
+
+## Quit button
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/15
+
+## Scoreboard
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/17
+
+## Computer choice
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/18
+
+## Results display
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/19
+
+## Player section
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/20
+
+## Winner/loser/draw pages
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/21
+
+## Sounds
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/22
+
 <br>
 
 [Home](README.md#user-stories)

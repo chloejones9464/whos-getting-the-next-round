@@ -6,7 +6,7 @@ Look no further! Here is a fun, quirky game for you to enjoy while at the pub, a
 
 I've created a game that can be played by anyone of all ages. 
 You can expect a funny paragraph at the end of each round if you've won, lost or had a draw with your mate!
-Even if you havent got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
+Even if you haven't got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
 
 Growing up I've always enjoyed this game whether its making decisions or curing a period of boredom, it was a big part of my childhood.
 
@@ -32,9 +32,9 @@ Growing up I've always enjoyed this game whether its making decisions or curing 
 
 ### User Stories
 
-Here you'll find the user stories for my project, I have both [HTML/CSS](html-css-us.md) and [JavaScript](javascript-us.md) user stories.
+[Here](userstories.md) you'll find the user stories for my project, I have combined the HTML and JavaScript user stories.
 
-Both links contain screenshots of the user stories in my GitHub project and will have corresponding screenshots/screen recordings of the completed tasks.
+This link contain screenshots of the user stories in my GitHub project and will have corresponding screenshots/screen recordings of the completed tasks.
 
 ### Wireframes
 Please follow this link to the Wireframes.
