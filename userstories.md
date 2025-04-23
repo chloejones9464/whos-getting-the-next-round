@@ -226,49 +226,73 @@ https://github.com/chloejones9464/whos-getting-the-next-round/issues/6
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/11
 
+Below, I've created a screen recording that display the Player name input for all devices.
+
+[![Player name input for all devices](https://img.youtube.com/vi/ta8vOahVjXo/0.jpg)](https://youtu.be/ta8vOahVjXo)
+
+
 ## Play game button
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/12
+
+
+[![Player name input for all devices](https://img.youtube.com/vi/_laglSdI4_c/0.jpg)](https://youtu.be/_laglSdI4_c)
 
 ## Set a win target
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/13
 
+
+[![Player name input for all devices](https://img.youtube.com/vi//0.jpg)]()
+
 ## Rules button HTML
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/14
 
-## Rules JS
-
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/16
+[![Player name input for all devices](https://img.youtube.com/vi/20DYdkSpvgU/0.jpg)](https://youtu.be/20DYdkSpvgU)
 
 ## Quit button
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/15
 
-## Scoreboard
+[![Player name input for all devices](https://img.youtube.com/vi/Tuv3nwmGLcU/0.jpg)](https://youtu.be/Tuv3nwmGLcU)
 
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/17
+## Game play User stories
 
-## Computer choice
+| User story title      | User story links           | 
+| ------------- |:-------------:| 
+| Rules JS      | https://github.com/chloejones9464/whos-getting-the-next-round/issues/16 | 
+| Scoreboard      | https://github.com/chloejones9464/whos-getting-the-next-round/issues/17      | 
+| Computer choice | https://github.com/chloejones9464/whos-getting-the-next-round/issues/18      | 
+| Results display | https://github.com/chloejones9464/whos-getting-the-next-round/issues/19      | 
+| Player section | https://github.com/chloejones9464/whos-getting-the-next-round/issues/20      |
+| Winner/loser/draw pages | https://github.com/chloejones9464/whos-getting-the-next-round/issues/21      | 
+| Sounds | https://github.com/chloejones9464/whos-getting-the-next-round/issues/22      | 
 
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/18
+<details>
+<summary>Mobile(320px)</summary>
 
-## Results display
+[![Player name input for all devices](https://img.youtube.com/vi/zsm1cxfWm6U/0.jpg)](https://youtu.be/zsm1cxfWm6U)
+</details>
 
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/19
+<details>
+<summary>Tablet</summary>
 
-## Player section
+[![Player name input for all devices](https://img.youtube.com/vi/2ukIhUiUAlc/0.jpg)](https://youtu.be/2ukIhUiUAlc)
+</details>
 
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/20
+<details>
+<summary>Laptop</summary>
 
-## Winner/loser/draw pages
+[![Player name input for all devices](https://img.youtube.com/vi/THpFs0_CGwc/0.jpg)](https://youtu.be/THpFs0_CGwc)
+</details>
 
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/21
+<details>
+<summary>1080p Screen</summary>
 
-## Sounds
+[![Player name input for all devices](https://img.youtube.com/vi/gQI1397UCfk/0.jpg)](https://youtu.be/gQI1397UCfk)
+</details>
 
-https://github.com/chloejones9464/whos-getting-the-next-round/issues/22
 
 <br>
 

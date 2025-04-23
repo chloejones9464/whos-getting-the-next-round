@@ -1,6 +1,7 @@
 //Sound variables
 let isMuted = true; // Mute sounds
 let backgroundNoise = new Audio("assets/sounds/crowded-pub.mp3");
+backgroundNoise.volume = 0.4; // Set volume to 40%
 backgroundNoise.loop = true; // Loop the background noise
 let winnerNoise = new Audio("assets/sounds/winner-noise.mp3");
 let loserNoise = new Audio("assets/sounds/loser-noise.mp3");
@@ -254,6 +255,7 @@ function draw() {
 }
 
 function playerWinPage() {
+    winnerNoise.currentTime = 0;
     playWinnerSound();
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
 
@@ -288,6 +290,7 @@ function playerWinPage() {
 }
 
 function computerWinPage() {
+    loserNoise.currentTime = 0;
     playLoserSound();
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
@@ -320,6 +323,7 @@ function computerWinPage() {
 }
 
 function drawPage() {
+    drawNoise.currentTime = 0;
     drawSound();
     // Getting the player name from local storage or using a default name
     let name = localStorage.getItem("playerName") || "Secret pub warrior";
