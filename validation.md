@@ -1,14 +1,40 @@
 # Validation checks
 
-## CSS
+
+<details>
+<summary>CSS</summary>
+
 ![CSS validation](assets/documentation/css.webp)
-## index.html
+</details>
+
+<details>
+<summary>index.html</summary>
+
 ![index.html validation](assets/documentation/index.html.webp)
-## game-page.html
+</details>
+
+<details>
+<summary>game-page.html</summary>
+
 ![game-page.html validation](assets/documentation/game-page.html.webp)
-## winner.html
+</details>
+
+<details>
+<summary>winner.html</summary>
+
 ![winner.html validation](assets/documentation/winner.html.webp)
-## loser.html
+</details>
+
+<details>
+<summary>loser.html</summary>
+
 ![loser.html validation](assets/documentation/loser.html.webp)
-## draw.html
+</details>
+
+<details>
+<summary>draw.html</summary>
+
 ![draw.html validation](assets/documentation/draw.html.webp)
+</details>
+
+[Home](README.md#code-validation)

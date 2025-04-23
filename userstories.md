@@ -267,6 +267,7 @@ https://github.com/chloejones9464/whos-getting-the-next-round/issues/15
 | Results display | https://github.com/chloejones9464/whos-getting-the-next-round/issues/19      | 
 | Player section | https://github.com/chloejones9464/whos-getting-the-next-round/issues/20      |
 | Winner/loser/draw pages | https://github.com/chloejones9464/whos-getting-the-next-round/issues/21      | 
+| Reset button | https://github.com/chloejones9464/whos-getting-the-next-round/issues/23 | 
 | Sounds | https://github.com/chloejones9464/whos-getting-the-next-round/issues/22      | 
 
 <details>
@@ -296,4 +297,5 @@ https://github.com/chloejones9464/whos-getting-the-next-round/issues/15
 
 <br>
 
-[Home](README.md#user-stories)
+[Home (User stories)](README.md#user-stories) <br>
+[Home (Responsiveness)](README.md#responsiveness)

@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 //Sound variables
 let isMuted = true; // Mute sounds
 let backgroundNoise = new Audio("assets/sounds/crowded-pub.mp3");
@@ -378,31 +380,6 @@ function mainMenu() {
     drawNoise.pause();
     draw.currentTime = 0;
     playerName(); // Call the function to set up player name input
-}
-
-// throw an error 404 if the page is not found
-function pageNotFound() {
-    document.getElementById("mainMenu").innerHTML = /*html*/ `
-    <div class="container">
-        <div id="topDiv">
-
-        </div>
-        <div id="middleDiv">
-            <div id="error">
-            <h1>404</h1>
-            <div>Ops! looks like you've gone to the wrong pub!</div>
-            <div>Don't worry, I'll give you a lift</div>
-            <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Jump in!!
-                (Main Menu)</button>
-            </div>
-        </div>
-        <div id="bottomDiv">
-
-        </div>
-    </div>`;
-
-    // Add event listener to the main menu button on the error page
-    document.getElementById("mainMenuBtn").addEventListener("click", mainMenu);
 }
 
 window.addEventListener('DOMContentLoaded', setup);

@@ -8,7 +8,9 @@ I've created a game that can be played by anyone of all ages.
 You can expect a funny paragraph at the end of each round if you've won, lost or had a draw with your mate!
 Even if you haven't got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
 
-Growing up I've always enjoyed this game whether its making decisions or curing a period of boredom, it was a big part of my childhood.
+Growing up, I've always enjoyed this game whether its making decisions or curing a period of boredom. It was a big part of my childhood.
+
+---
 
 ## Table Of Contents:
 1. [Design & Planning](#design-&-planning)
@@ -36,26 +38,35 @@ Growing up I've always enjoyed this game whether its making decisions or curing 
 
 This link contain screenshots of the user stories in my GitHub project and will have corresponding screenshots/screen recordings of the completed tasks.
 
+---
 ### Wireframes
 Please follow this link to the Wireframes.
 
 Click [here](wireframes.md) and it'll take you straight there!
+
+---
 ### Typography
 I used Google fonts' "Caveat Brush" for the one and only font for this game. It's a playful and fun font that fits well with a game that is casually played where-ever, whenever and in any decision making process!
 
+---
 ### Colour Scheme
 
 #### ColorSpace and Eye Dropper
 I used the eye dropper on the image in the background of the front screen and passed the color I'd like to create a palette from, through to ColorSpace.
 I then scrolled thorugh to find the best palette for my project. In this case it was "Matching Gradient".
 
+---
+
 #### Eye dropper tool in Chrome's extension
 ![Eye dropper tool, extention in Chrome](assets/documentation/eye-dropper.webp)
 
+---
 #### ColorSpace color palette, I used the "Matching Gradient" palette
 ![ColorSpace color palette](assets/documentation/colorspace-pallett-pick.webp)
 
+---
 ## Features:
+
 ### Navigation
 The navigation within this game is very simple and straight-forward. 
 
@@ -73,6 +84,7 @@ The winner/loser/draw pages contain 2 buttons that will ask the player to chose 
 The play again button will take the player back to the page with the same set wins target as they chose on the home page.
 The main menu button take the player to the home page and will clear the set win target and give the player to chose another if they'd like to up or lower it.
 
+---
 ### Other features
 ## Technologies Used
 For my project I used; 
@@ -81,22 +93,47 @@ For my project I used;
 * Github is used to store and build my project, the BEST!
 * I used Google fonts for a more playful font that'll pair well with my concept (laid-back pub vibe).
 * JavaScript
+* I used an extension within VSCode that enable me to view my project live as I am designing, styling and coding. This extension is Live Preview.
+
 ## Testing
 
 Here we go! The most important part of this README and one that I have a love/hate relationship!
 
 ### Google's Lighthouse Performance
 Follow this [link](lighthouse.md) to view the Google Lighthouse Performance on mobiles and desktops!
-### Browser Compatibility
 
+---
+### Browser Compatibility
+When testing different browsers, I used screen recording so that you can see the responsiveness and compatibility across browsers such as; Chrome, Internet Explorer, Firefox, Opera and Safari.
+
+Please click the link below to view the testing.
+
+[![Browser testing](http://img.youtube.com/vi//0.jpg)]()
+
+---
 ### Responsiveness
-Screenshots of the responsivness, pick few devices (from 320px top 1200px)
+I've used screenshots and screen recordings in my user stories that show the games responsiveness for each element of this project.
+The screenshots/screen recordings show responsiveness on devices such as; Mobile(320px), Tablets, Laptops and screens of 1080p.
+
+ Please follow this [link](userstories.md) that will take you there.
+
+---
 ### Code Validation
 This [link](validation.md) will take you to the screentshot of the validation checks I'd run for all my pages.
 There were a few minor errors that popped up but was mainly the duplicate of ids and the background image in the body tag.
+
+This drop down will show you the screenshot of the JSHint checks of my script.js.
+
+<details>
+<summary>JSHint</summary>
+
+![JSHint checks](assets/documentation/jshint-validation.webp)
+</details>
+
+---
 ### Manual Testing user stories or/and features
-Please find the visual testing in the following links;
-[HTML/CSS](html-css-us.md) and [JavaScript](javascript-us.md)
+Please find the visual testing in the following link;
+[User story testing](userstories.md)
 
 User Story |  Test | Pass
 --- | --- | :---:
@@ -127,17 +164,20 @@ As a player, I want a player section, so that I know where I need to click the h
 As a player, I want an end of game page, so that I can see if I've won, lost or drew in the game. | The player can expect to see a page appear after each "set win target" is met. They will have a personalised message for if they win/lose/draw, thanks to the input on the main page. This will give the player a sense that the game has ended but will have the option to play again or retun to the main menu. | &check;
 --- | --- | :---:
 As a player, I want fun sounds played in the background, so that I get the feel of being in a pub. | The sounds in the game are a crowded pub, applause, loser noise and draw noise. The main sound of the game will be the crowded pub noise as it plays throughout the game. When the player wins they will receive a round of applause, if they lose they will receive an "awww" noise and if they draw they will receive an "ahh interesting" nosie. | &check;
-
+--- | --- | :---:
+As a player, I want to have a Reset button in the main menu, so that I can reset my name and set a win target for future games. | The player will see a button labelled "Reset" at the bottom of the menu. Once clicked, the button will display a modal that will pop-over the menu screen. In the modal, there will be a small sentence asking if the player would like to reset the data they've entered into the game(Name and Set a win target). There will be an option to confirm or cancel the request. If the player clicks to "Reset", both their name and Set a win target will be set to the default setting. | &check;
 
 ## Bugs
 
 ### Getting the background image to fit the whole screen
 I applied the background image to the HTML page as I'm going to change it when the 'Play game' button is clicked. I then tried working out how to position the image center and so there there wasn't any gaps at the bottom of the page. To do this I applied the following code: **background-position: center center** & **background-attachment: fixed**. This helped position the image in the center of the screen and the attachment is set to fix so that the image stays where it is.
 
+---
 ### Google Fonts
 After completing my first project and learning about JavaScript, I'd let my knowledge slip a little on how to import the fonts I'd like from Google Fonts and pop them into my project.
 I'd placed the import line of code in the CSS stylesheet as usual but I'd also copied and pasted the link to put into the head of the HTML page. After realizing what I'd done. I deleted the link in the HTML and kept import in the CSS stylesheet. I'd then noticed that the the font-family was placed in the HTML element on the stylesheet. I placed that style in the body element instead. The font worked perfect after that, thank god!
 
+---
 ### Git conflict
 I received an error displaying;
 To https://github.com/chloejones9464/whos-getting-the-next-round.git
@@ -174,22 +214,25 @@ Automatic merge failed; fix conflicts and then commit the result.
 I then fixed the conflict in the winner page and successfully manages to push my updates.
 That was stressful...
 
-
+---
 ### #mainMenu issue
 I was working on the pages Winner and Loser ready to move onto my JavaScript element of the project when I flicked over to the home page to find that the background and styles were all over the shop!
 I looked for the problem and found that the #mainMenu was used on the home page and for the button to take you back there on the Winner and Loser pages. To fix the issue, I created a class for the button with the styles in it and Voila! Back to normal.
 
+---
 ### Validator for HTML pages
 The validator pulled up the background image I'd placed in the body tag.
 I corrected this by putting the styling in the style.css sheet, but I came across an issue. there was no background image!!
 I searched online and used the help from Stack Overflow, I took the "" out of the path to the image. Still no image! I then removed assets and replaced with .. and re-added the "" to the path.....BOOM, image!
 I went on to change this on the game, winner, loser and draw pages.
 
+---
 ### Event listeners!!
 I couldn't, for the life of me, think how to connect the event listeners to the game page. So I reached out to my fab mentor Matt for a little guidance. He'd explained in detail about why we need to call the event listener function in the playGame() function.
 Matt also helped debug a function that was in my code during our call.
 The code wasn't registering the computerChoice function because I was comparing playerChoice and copmuterChoice when the computer was declated a variable with the value of computerChoice. This was changed, tested and all worked perfectly.
 
+---
 ### Changing the HTML to the winner/loser/draw pages content
 I was working on getting the content to show for when a player/computer wins or whether there was a draw. I'd managed to get this working but then had an error pop up in the console; 
 "Uncaught TypeError
@@ -202,23 +245,34 @@ HTMLDivElement
 
 I had to change the ids on the play again buttong and menu button. This corrected the issue as they had the same id and clashed.
 
-
+---
 ### Close game function
 I had a close game function in my code at the very beginning of my project but then researched that I'm unable to close the window through the function.
 This is becaosue the function can only work if the game was opened via JavaScript. With this in mind, I decided to remove the code from the game.
 
+---
 ### btn class from Bootstrap
 The button, when hovered over, was showing the classic Bootstrap blue background and white text. This was an issue as this did not tie into my color scheme and would look out of place.
 I did a little research and found from Quora that I was able to alter the button hover state and place an important at the end of each style, this ensured that the Boostrap styling is overwritten.
 
+---
 ### Dodgy commit
 I'd spend days trying to work out the JavaScript for the first element of the game and after working at it for quite some time, I forgot to commit in-between my development! I went on to delete the code and add it back in bit by bit and commit each time so that the commit is much smaller and traceable.
 
+---
 ### Grabbing the username
 I found this part of the project quite difficult. I wanted to use the user name in the paragraphs I'd made for when the player wins, loses or has a draw with the computer. I tried everything from websites to ChatGPT!
 In the end, I combined the both to get the outcome I desired.
 I created a function that I would call at the loading of the front page then I called it again when returning to the main menu page.
 It's safe to say I deserved my Gin and takeaway that night!
+
+---
+### JSHint 
+
+I've chosen to use the JSHint to check my Javascript. This site is easy to use and I'm able to read and understand if an error or warning occurs in my code.
+So, I ran my code through the site and they pulled up 52 warnings. Scratching my head wondering what I'll need to do to get rid of these errors, they looked like this: 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+I used ChatGpt to help me understand why this is happening and if there is anything I would need to do to resolve it!
+I simply needed to add the line /* jshint esversion: 6 */ to the beginning of my code to show the site that I'm using an ES higher than 5.
 
 ## Deployment
 
@@ -261,7 +315,9 @@ To fork a repository on GitHub, navigate to the desired repository on GitHub, th
 * Favicon - I created an image using ChatGPT and then made the image into a Favicon for my project.
 * Geekforgeeks - Helped me with my range slider development.
 * Pixabay.com - I had the sound effects from this website for my game.
-* dhwise.com - Helped hugely with my 404 error page set up!!
+* JSHint - I used this site to check my JavaScript code.
+* Am I Responsive? - I used Am I Responsive? to display my project as a hero image in my README.
+
 
   - Code & Text Content
   
