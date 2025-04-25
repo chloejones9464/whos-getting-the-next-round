@@ -21,8 +21,8 @@ Growing up, I've always enjoyed this game whether its making decisions or curing
 
     
 2. [Features](#features)
-    * [Navigation](#Navigation)
-    * [Other features](#Other-features)
+    * [Navigation](#navigation)
+    * [Other features](#other-features)
 
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
@@ -36,7 +36,7 @@ Growing up, I've always enjoyed this game whether its making decisions or curing
 
 [Here](userstories.md) you'll find the user stories for my project, I have combined the HTML and JavaScript user stories.
 
-This link contain screenshots of the user stories in my GitHub project and will have corresponding screenshots/screen recordings of the completed tasks.
+This page contains links to my user stories in my GitHub project and will have corresponding screenshots/screen recordings of the completed tasks.
 
 ---
 ### Wireframes
@@ -86,6 +86,16 @@ The main menu button take the player to the home page and will clear the set win
 
 ---
 ### Other features
+
+#### .innerHTML
+I have a specific feature that I'm incredibly proud of, and that is the transitioning to and from the game page.
+I used a lovely trick that my mentor taught me, that is to manipulate the DOM and change the .innerHTML of the divs on the index.html. This worked so well for the project and using this method has helped improve the performance by cutting out the loading of another page.
+It make the project feel sleek.
+
+#### Sound effects
+Another feature that I quite like, though not as much as the first, is the sound effects added to the game.
+I love that the game has another layer to it, having sound adds a more enjoyable experience. Giving the feel of being in the pub, celebration cheers for when you win, a sad sound for when you lose and a funny voice sound effect for when you draw. There is an option to turn the effects on at the bottom of the page, on every page, so if the player has had a gutful of hearing the quirky sound effects they can switch it off.
+
 ## Technologies Used
 For my project I used; 
 * HTML and CSS for the structure of the project.
@@ -99,6 +109,23 @@ For my project I used;
 
 Here we go! The most important part of this README and one that I have a love/hate relationship!
 
+### Manual and Automated testing
+
+#### Manual testing
+Manual testing is checking your project against user stories and testing through the browser with diffreent browser resolutions, responsiveness and design in mind. Also known as "user tesing".<br>
+There comes some cons with this form of testing as it's; <br>
+Time consuming having to check each an every element to see if it works the way you'd like.<br>
+Resource hungry, if the project is of a certain size then it will need a large team to test and work on it.<br>
+High error rate as there may be blind spots in the code, small errors missed and the team's biases could play a part also.
+
+#### Automated testing
+Automated testing used code to test code. There are many pros to this as; <br>
+It quicker! - 100's of tests can be run over a short amount of time. <br>
+Early error detection - tests are writted by the programmer as the project is being developed, so errors are picked up very early into the project.<br>
+This form of testing can be beneficail as it can perform very specific testing.<br>
+As with everything, automated testing has it's cons. Tests are only as good as the questions you're asking, you NEED to be clear in what you'd like to test!<br>
+This is a big one that I believe is very very important, it doesn't test the user experience. If you'd like your project to perform in a certain way and you'd like to visually see it, it may not be great to use this form of testing.
+
 ### Google's Lighthouse Performance
 Follow this [link](lighthouse.md) to view the Google Lighthouse Performance on mobiles and desktops!
 
@@ -108,7 +135,7 @@ When testing different browsers, I used screen recording so that you can see the
 
 Please click the link below to view the testing.
 
-[![Browser testing](http://img.youtube.com/vi//0.jpg)]()
+[![Browser Testing](https://img.youtube.com/vi/SwnB0lDGp4g/0.jpg)](https://youtu.be/SwnB0lDGp4g)
 
 ---
 ### Responsiveness
@@ -159,7 +186,7 @@ As a player, I want see what the computer chose, so that I can see what we've bo
 --- | --- | :---:
 As a player, I want to have a visual results display, so that I can read if I've won, lost or drew in the round. | The results display will contain a small line to tell the player who's won if if the game was a draw. The player can read the display clearly and instantly as soon as they click on the hand.| &check;
 --- | --- | :---:
-As a player, I want a player section, so that I know where I need to click the hands and play the game. | The player can expect to find their hands for the game to be at the bottom of the play area. They can click on the hands for instant results of the game. If the player is playing on a desktop, they can expect to see the cursor and hand change as they hover over them. | &check; - [link to hands response vid]
+As a player, I want a player section, so that I know where I need to click the hands and play the game. | The player can expect to find their hands for the game to be at the bottom of the play area. They can click on the hands for instant results of the game. If the player is playing on a desktop, they can expect to see the cursor and hand change as they hover over them. | &check;
 --- | --- | :---:
 As a player, I want an end of game page, so that I can see if I've won, lost or drew in the game. | The player can expect to see a page appear after each "set win target" is met. They will have a personalised message for if they win/lose/draw, thanks to the input on the main page. This will give the player a sense that the game has ended but will have the option to play again or retun to the main menu. | &check;
 --- | --- | :---:
@@ -273,6 +300,10 @@ I've chosen to use the JSHint to check my Javascript. This site is easy to use a
 So, I ran my code through the site and they pulled up 52 warnings. Scratching my head wondering what I'll need to do to get rid of these errors, they looked like this: 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 I used ChatGpt to help me understand why this is happening and if there is anything I would need to do to resolve it!
 I simply needed to add the line /* jshint esversion: 6 */ to the beginning of my code to show the site that I'm using an ES higher than 5.
+
+---
+### Sound effects button text
+
 
 ## Deployment
 

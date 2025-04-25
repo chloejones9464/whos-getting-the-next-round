@@ -236,26 +236,32 @@ Below, I've created a screen recording that display the Player name input for al
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/12
 
 
-[![Player name input for all devices](https://img.youtube.com/vi/_laglSdI4_c/0.jpg)](https://youtu.be/_laglSdI4_c)
+[![Play game button for all devices](https://img.youtube.com/vi/_laglSdI4_c/0.jpg)](https://youtu.be/_laglSdI4_c)
 
 ## Set a win target
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/13
 
 
-[![Player name input for all devices](https://img.youtube.com/vi//0.jpg)]()
+[![Set a win target for all devices](https://img.youtube.com/vi/_LVkL0-bvYA/0.jpg)](https://youtu.be/_LVkL0-bvYA)
 
 ## Rules button HTML
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/14
 
-[![Player name input for all devices](https://img.youtube.com/vi/20DYdkSpvgU/0.jpg)](https://youtu.be/20DYdkSpvgU)
+[![Rules button HTML for all devices](https://img.youtube.com/vi/20DYdkSpvgU/0.jpg)](https://youtu.be/20DYdkSpvgU)
 
 ## Quit button
 
 https://github.com/chloejones9464/whos-getting-the-next-round/issues/15
 
-[![Player name input for all devices](https://img.youtube.com/vi/Tuv3nwmGLcU/0.jpg)](https://youtu.be/Tuv3nwmGLcU)
+[![Quit button for all devices](https://img.youtube.com/vi/Tuv3nwmGLcU/0.jpg)](https://youtu.be/Tuv3nwmGLcU)
+
+## Sound effects
+
+https://github.com/chloejones9464/whos-getting-the-next-round/issues/22 
+
+[![Sound effects for all devices](https://img.youtube.com/vi/jDcA6OgJs9E/0.jpg)](https://youtu.be/jDcA6OgJs9E)
 
 ## Game play User stories
 
@@ -268,12 +274,11 @@ https://github.com/chloejones9464/whos-getting-the-next-round/issues/15
 | Player section | https://github.com/chloejones9464/whos-getting-the-next-round/issues/20      |
 | Winner/loser/draw pages | https://github.com/chloejones9464/whos-getting-the-next-round/issues/21      | 
 | Reset button | https://github.com/chloejones9464/whos-getting-the-next-round/issues/23 | 
-| Sounds | https://github.com/chloejones9464/whos-getting-the-next-round/issues/22      | 
 
 <details>
 <summary>Mobile(320px)</summary>
 
-[![Player name input for all devices](https://img.youtube.com/vi/zsm1cxfWm6U/0.jpg)](https://youtu.be/zsm1cxfWm6U)
+[![Game Play input](https://img.youtube.com/vi/zsm1cxfWm6U/0.jpg)](https://youtu.be/zsm1cxfWm6U)
 </details>
 
 <details>
