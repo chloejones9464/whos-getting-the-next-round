@@ -19,7 +19,8 @@ body {
     background-blend-mode: soft-light;
     background-position: center center;
     background-attachment: fixed;
-    font-family: "Caveat Brush", "sans-serif";
+    font-family: "Caveat Brush", "sans-serif";    
+    background-image: url("../images/pub-bg-image.webp");
 }
 
 .container {
@@ -35,9 +36,6 @@ body {
 }
 
 /*Styling for Main menu page*/
-#mainMenu {
-    background-image: url("../images/pub-bg-image.webp");
-}
 
 #heading,
 #enterName,

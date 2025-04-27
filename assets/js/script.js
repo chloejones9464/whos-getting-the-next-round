@@ -368,10 +368,10 @@ function reset() {
 }
 
 // Store original content when the page loads
-let originalContent = document.getElementById("mainMenu").innerHTML;
+let mainMenuContent = document.getElementById("mainContainer").innerHTML;
 
 function mainMenu() {
-    document.getElementById("mainMenu").innerHTML = originalContent;
+    document.getElementById("mainContainer").innerHTML = mainMenuContent;
     setup();
     winnerNoise.pause();
     winnerNoise.currentTime = 0;
