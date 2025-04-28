@@ -124,7 +124,6 @@ function playerName() {
             name = "Secret pub warrior";
         }
         localStorage.setItem("playerName", name);
-        console.log("Player name saved:", name);
     });
 }
 
