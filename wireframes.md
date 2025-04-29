@@ -1,11 +1,11 @@
 # Wireframes
 
+#### Below you'll see I've created the frames that follow the same structure, this is because I wanted to use 3 divs that will change using JavaScript .innerHTML. <br> I've ensured, in these wireframe, to keep accessibility in mind so that the pages are clear and functional. Each button is designed for clear reading and understanding. My main aim for this Game is to ensure that all ages can play the game with ease and enjoyment.
+
 ## Mobile
 
 <details>
 <summary>Mobile Wireframes</summary>
-
-#### Below you'll see I've created the frames together to ensure I keep the structure of the page the same.
 
 ![Mobile wireframes](assets/documentation/mobile-wireframes.webp)
 </details>

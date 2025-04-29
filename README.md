@@ -4,7 +4,7 @@
 Ever needed to make a decision on who's getting the next round of drink in from the bar?
 Look no further! Here is a fun, quirky game for you to enjoy while at the pub, at home or...anywhere really!
 
-I've created a game that can be played by anyone of all ages. 
+I've created a game that can be played by anyone of all ages. I want the game to provide fun, enjoyment and entertainment for all players.
 You can expect a funny paragraph at the end of each round if you've won, lost or had a draw with your mate!
 Even if you haven't got a scooby-doo about the game of Rock, Paper, Scissors, I've put the rules on both home and game pages!
 
