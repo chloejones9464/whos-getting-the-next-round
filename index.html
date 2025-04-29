@@ -32,7 +32,7 @@
         <div id="middleDiv">
             <div id="enterName">
                 <h3 class="display-5">Who's playing?</h3>
-                <input type="text" id="playerName" placeholder="Enter player name" maxlength="15">
+                <input type="text" id="playerName" placeholder="Enter player name" maxlength="15" aria-label="Enter player name">
             </div>
         </div>
         <div id="bottomDiv">
@@ -60,7 +60,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-3" id="numberOfGamesLabel">Set a win target</h1>
+                    <h1 class="modal-title" id="numberOfGamesLabel">Set a win target</h1>
                     <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -82,12 +82,12 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-3" id="rulesModalLabel">Rules</h1>
+                    <h1 class="modal-title" id="rulesModalLabel">Rules</h1>
                     <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                    <h4>Rock, Paper, Scissors – Pint Rules Edition 🍻</h4>
+                    <h2>Rock, Paper, Scissors – Pint Rules Edition 🍻</h2>
                     <hr>
                     <p>
                         <strong>Standard Rules Apply</strong> – Rock beats Scissors, Scissors beats Paper, Paper beats
@@ -113,15 +113,15 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Reset</h5>
+              <h1 class="modal-title">Reset</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Are you sure you want to reset?</p> <br>
+              <h2>Are you sure you want to reset?</h2> <br>
               <p>You'll be resetting your name and 'Set a win target'</p>
             </div>
             <div class="modal-footer">                
-              <button type="button" id="reset" class="btn btn-primary close" data-bs-dismiss="modal">Yes</button>
+              <button type="button" id="reset" class="btn btn-secondary close" data-bs-dismiss="modal">Yes</button>
               <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">No</button>
             </div>
           </div>
