@@ -158,6 +158,19 @@ This dropdown will show you the screenshot of the JSHint checks of my script.js.
 </details>
 
 ---
+### WAVE Evaluation
+I used WAVE to ensure I have the best possible accessibility features in my game so anyone can play and enjoy! <br>
+There is an alert about the noscript tag. There was no action needed for this as I want to keep it on the page.
+
+Here is the screenshot of the checks;
+
+<details>
+<summary>WAVE Evaluation</summary>
+
+![WAVE Evaluation checks](assets/documentation/wave-evaluation.webp)
+</details>
+
+---
 ### Manual Testing user stories or/and features
 Please find the visual testing in the following link;
 [User story testing](userstories.md)
