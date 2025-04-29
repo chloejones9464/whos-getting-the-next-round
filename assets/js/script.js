@@ -38,10 +38,10 @@ function playPause() {
         loserNoise.currentTime = 0;
         drawNoise.pause();
         drawNoise.currentTime = 0;
-        document.getElementById("playSound").innerHTML = /*html*/ `<p>Sound effects on</p>`;
+        document.getElementById("playSound").innerHTML = /*html*/ `<p><i class="fa-solid fa-volume-high"></i></p>`;
     } else {
         backgroundNoise.play();
-        document.getElementById("playSound").innerHTML = /*html*/ `<p>Sound effects off</p>`;
+        document.getElementById("playSound").innerHTML = /*html*/ `<p><i class="fa-solid fa-volume-xmark"></i></p>`;
     }
 }
 

@@ -135,8 +135,8 @@ footer {
 
 /*Styling FontAwesome icon*/
 #playSound {
-    width: 104px;
-    height: 34px;
+    width: 46px;
+    height: 30px;
     background-color: var(--main-bg-color);
     cursor: pointer;
 }
