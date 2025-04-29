@@ -349,6 +349,7 @@ To fork a repository on GitHub, navigate to the desired repository on GitHub, th
 * JSHint - I used this site to check my JavaScript code.
 * Am I Responsive? - I used Am I Responsive? to display my project as a hero image in my README.
 * Word - I used Microsoft Word to spell check this README.
+* Autoprefixer CSS - I used this website to ensure better cross-browser compatibility without requiring you to manually write prefixes like -webkit-, -moz-, -ms-, or -o-.
 
 
   - Code & Text Content

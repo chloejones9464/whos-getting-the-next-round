@@ -20,17 +20,16 @@
 <body id="winner">
     <div class="container">
         <div id="topDiv">
-            <div class="resultPageHeading">
-                <div class="box">
-                    <h1>TELL YOUR MATE WHAT
-                        <br> YOU WANT FROM THE BAR!</h1>
+            <div>
+                <div class="box resultPageHeading">
+                    <h1>TELL YOUR MATE WHAT<br> YOU WANT FROM THE BAR!</h1>
                 </div>
             </div>
         </div>
         <div id="middleDiv">
-            <div class="box" id="winnerPara">
+            <div class="box" id="resultPara">
                 <p>Ladies and gentlemen, we have a champion! Against all odds, defying the laws of probability (and
-                    sobriety), YOU have emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
+                    sobriety), <strong>${name}</strong> has emerged victorious in the legendary battle of Pub Rock, Paper, Scissors! With
                     the cunning of a fox, the reflexes of a caffeinated squirrel, and the sheer luck of someone who
                     always finds money in old jeans, you have crushed your opponent’s spirits like a well-placed rock
                     smashing flimsy scissors. Bask in the glory, oh mighty hand-gesture warrior! Your prize? Eternal
@@ -39,10 +38,8 @@
         </div>
         <div id="bottomDiv">
             <div id="menu">                
-                <button type="button" class="btn btn-primary btn-lg" id="playGame">Play again</button> <br>
-                <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>
-                <button type="button" class="btn btn-primary btn-lg" id="closeGame">I've had enough, TAXI!</button>             
-        
+                <button type="button" class="btn btn-primary btn-lg playAgain" id="playGame">Play again</button> <br>
+                <button type="button" class="btn btn-primary btn-lg mainMenu" id="mainMenuBtn">Go outside for "fresh air" (Main Menu)</button> <br>        
             </div>
         </div>
     </div>

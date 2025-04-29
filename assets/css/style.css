@@ -120,6 +120,8 @@ footer {
 }
 
 #sliderModalBody {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
 }
 
@@ -171,10 +173,16 @@ footer {
 }
 
 #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .box {
@@ -301,7 +309,11 @@ footer {
 #paper:hover,
 #scissors:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
