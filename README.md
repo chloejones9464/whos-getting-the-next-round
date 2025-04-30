@@ -314,10 +314,6 @@ So, I ran my code through the site, and they pulled up 52 warnings. Scratching m
 I used ChatGpt to help me understand why this is happening and if there were anything I would need to do to resolve it!
 I simply needed to add the line /* jshint esversion: 6 */ to the beginning of my code to show the site that I'm using an ES higher than 5.
 
----
-### Sound effects button text
-
-
 ## Deployment
 
 #### Deploying on GitHub
