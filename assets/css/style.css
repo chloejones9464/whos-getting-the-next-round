@@ -147,6 +147,7 @@ footer {
     height: 30px;
     background-color: var(--main-bg-color);
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #playSound p {
